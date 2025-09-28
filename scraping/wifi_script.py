@@ -29,6 +29,7 @@ def main():
 
     token = get_token(secret)
 
+    # Fetching WiFi clients data and saving to CSV
     df_wifi = get_wifi_clients(token)
     filename = f"data/wifi_clients/wifi_clients_{time.strftime('%Y%m%d_%H%M%S')}.csv"
     df_wifi.to_csv(filename, index=False)
