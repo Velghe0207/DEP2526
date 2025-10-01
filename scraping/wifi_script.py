@@ -1,30 +1,39 @@
 from dotenv import load_dotenv
 import os
 import requests
+import pandas as pd
+import time
 
-# Saving secret in a variable
+# Loading environment variables from .env file
 load_dotenv()  
-secret = os.getenv("SECRET")
-print(secret)
 
-data = {"secret": secret}
-
-# Saving access token in a variable
-def get_token(data, url="https://dep.simondg.com/auth/login"):
-    response = requests.post(url, json=data)
+# Function for POST request to get access token using secret
+def get_token(secret: str, url: str = "https://dep.simondg.com/auth/login"):
+    response = requests.post(url, json={"secret": secret})
+    response.raise_for_status() # Raises an error if the request fails
     return response.json()["access_token"]
 
-token = get_token(data)
-print(token)
+# Function for GET request to WiFi API
+def get_wifi_clients(token: str, url: str = "https://dep.simondg.com/wifi-clients/last-30-minutes"):
+    headers = {"Authorization": f"Bearer {token}"}
+    response = requests.get(url, headers=headers)
+    response.raise_for_status() # Raises an error if the request fails
+    data = response.json()
+    return pd.DataFrame(data)
 
-# Wifi API
-urlWifi = f"https://dep.simondg.com/wifi-clients/last-10-minutes"
+def main():
+    # Saving secret in a variable
+    secret = os.getenv("SECRET")
+    if not secret:
+        raise ValueError("SECRET not found in .env file")
 
-# Authentication with access token
-headers = {
-    "Authorization": f"Bearer {token}",
-}
+    token = get_token(secret)
 
-# GET request
-response = requests.get(urlWifi, headers=headers)
-print(response.json())
+    # Fetching WiFi clients data and saving to CSV
+    df_wifi = get_wifi_clients(token)
+    filename = f"data/wifi_clients/wifi_clients_{time.strftime('%Y%m%d_%H%M%S')}.csv"
+    df_wifi.to_csv(filename, index=False)
+
+
+if __name__ == "__main__":
+    main()
