@@ -14,7 +14,7 @@ def get_token(secret: str, url: str = "https://dep.simondg.com/auth/login"):
     return response.json()["access_token"]
 
 # Function for GET request to WiFi API
-def get_wifi_clients(token: str, url: str = "https://dep.simondg.com/wifi-clients/last-15-minutes"):
+def get_wifi_clients(token: str, url: str = "https://dep.simondg.com/wifi-clients/last-30-minutes"):
     headers = {"Authorization": f"Bearer {token}"}
     response = requests.get(url, headers=headers)
     response.raise_for_status() # Raises an error if the request fails
