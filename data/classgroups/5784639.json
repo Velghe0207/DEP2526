@@ -1,0 +1,47 @@
+{
+    "students": [
+        {
+            "SUBGROEPID": 5784639,
+            "SUBGROEPCODE": "PBA-ORTH/AO/2",
+            "DEELGROEPID": 26068,
+            "NAAM": "u_c8bf4d83697ccdb2fb1d64694a1585078cd9ed8ae5fb15e2d8a513657b837621",
+            "EMAIL": "u_1b1ebf5c3e0c7b17fc9ee84fe6da4958f0d421e92a8332053c8fd16a62c4b20a"
+        },
+        {
+            "SUBGROEPID": 5784639,
+            "SUBGROEPCODE": "PBA-ORTH/AO/2",
+            "DEELGROEPID": 26068,
+            "NAAM": "u_2d14d704cb5c0a7da29600e204a9915c1bac7760dc6342eb111e5a3f8bc17a7a",
+            "EMAIL": "u_c0b9f5ef1e2dbf8e4d9b7757e703ff9379578d1c24a387eefd87a28e5c14e022"
+        },
+        {
+            "SUBGROEPID": 5784639,
+            "SUBGROEPCODE": "PBA-ORTH/AO/2",
+            "DEELGROEPID": 26068,
+            "NAAM": "u_5183716ed7e2dadc282c4c82f7c1043c904ff16600286947be6c2de71ac45ca7",
+            "EMAIL": "u_7107602664eeea56e8f024dc48f1e0d91a07bbaa83364b418d476dcc7b7694ec"
+        },
+        {
+            "SUBGROEPID": 5784639,
+            "SUBGROEPCODE": "PBA-ORTH/AO/2",
+            "DEELGROEPID": 26068,
+            "NAAM": "u_1e1ab8b5c06f1ed61e88aa98a5cb5ad2c0de4586662855b39b8625baeb185e52",
+            "EMAIL": "u_0780f8c4cd6f0b8a7403a8c66d03a0377d77c9f389bb0176782dc0a455780bde"
+        },
+        {
+            "SUBGROEPID": 5784639,
+            "SUBGROEPCODE": "PBA-ORTH/AO/2",
+            "DEELGROEPID": 26068,
+            "NAAM": "u_3ee407537271828f22ef7c96e070759d4f5d59a7b509ada01cc1111054839979",
+            "EMAIL": "u_8ad69ad8e974087b902c237a086a623009f519c29369f274783cb8ab09979fe6"
+        },
+        {
+            "SUBGROEPID": 5784639,
+            "SUBGROEPCODE": "PBA-ORTH/AO/2",
+            "DEELGROEPID": 26068,
+            "NAAM": "u_8b7d8aec787a9dba6437c9274e9813f58d316a846d0c81c42ca618a60cda4c56",
+            "EMAIL": "u_5fed6f5f6075705785a7579d6b54a3a172e844597de2f2c221a39e2ce806834b"
+        }
+    ],
+    "count": 6
+}

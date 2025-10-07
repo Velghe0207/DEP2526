@@ -1,0 +1,63 @@
+{
+    "students": {
+        "students": [
+            {
+                "SUBGROEPID": 5857886,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2L",
+                "DEELGROEPID": 26135,
+                "NAAM": "u_3c35b7a2b7e1e26a4b14ce9a6586e9eef7651c8cafff44396749a989932ded8b",
+                "EMAIL": "u_99cba2e0f08c6a03883b850091d79d09c664c747804d392e7ad4fa4521b612f5"
+            },
+            {
+                "SUBGROEPID": 5857886,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2L",
+                "DEELGROEPID": 26135,
+                "NAAM": "u_358cbcc85a36e2cd31285fa3f671aaa36c52b912f34c58607307867e00f5b640",
+                "EMAIL": "u_f006007f5fabca98956214cebe68f33d55da975097a12f71301a6112acd354a4"
+            },
+            {
+                "SUBGROEPID": 5857886,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2L",
+                "DEELGROEPID": 26135,
+                "NAAM": "u_b86d6b30596a37dc029abd85d70ad05c8a61d08249f4b43606ee4dfce5d46ae8",
+                "EMAIL": "u_1d833290c137d00f5bb60c03debc983ea9bb0783c7a2db18218c4f44c17205ec"
+            },
+            {
+                "SUBGROEPID": 5857886,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2L",
+                "DEELGROEPID": 26135,
+                "NAAM": "u_f4b06a596600edb46044ad9e7729df0999073de1e1a37217b1ede4e075ba3a8d",
+                "EMAIL": "u_ae500131cba21b515be64194f6ba144466cffba08a99e7a50fa2688e7d77ec56"
+            },
+            {
+                "SUBGROEPID": 5857886,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2L",
+                "DEELGROEPID": 26135,
+                "NAAM": "u_6e56f118990de2490858bc362cdb031d6ad7e47b8a7e98b53dad1172b68c4881",
+                "EMAIL": "u_e3cf38486fc5a24f6fa9f1df86fba54f215839bf964045afb2a1016b2a0b14f5"
+            },
+            {
+                "SUBGROEPID": 5857886,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2L",
+                "DEELGROEPID": 26135,
+                "NAAM": "u_47469eeba75babd59c0f141b2483a78560256cd87a0f781f3166edbc00ed9c2d",
+                "EMAIL": "u_88bccfb76971f51f63ea21752525bee4850514a5218493a67e868a07a16ac613"
+            },
+            {
+                "SUBGROEPID": 5857886,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2L",
+                "DEELGROEPID": 26135,
+                "NAAM": "u_4825c7a2ed942e26cdab6cad1bf3fa50784e3a1b701e97e3c0418d42883f8ba2",
+                "EMAIL": "u_598f49c02f55f1e7332ed4e79ab8e06c6a3a31529a6703436ab76b09461efd29"
+            },
+            {
+                "SUBGROEPID": 5857886,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2L",
+                "DEELGROEPID": 26135,
+                "NAAM": "u_1dcb92555b8428d932a79d0ffb14d190a1a0a7fdee7d928714375fd9e64ba734",
+                "EMAIL": "u_7e1204827a2f48c94a710c00b4b6986e8f066b18691ab6aebd1413301457a6bc"
+            }
+        ],
+        "count": 8
+    }
+}

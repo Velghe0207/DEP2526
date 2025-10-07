@@ -1,0 +1,28 @@
+{
+    "students": {
+        "students": [
+            {
+                "SUBGROEPID": 5786326,
+                "SUBGROEPCODE": "PBA-AGR-VOE/2A2",
+                "DEELGROEPID": 26259,
+                "NAAM": "u_fd2c93ba556360fe0cbff7dd5ac910d4fae243a874613bf4370bb0c376900e27",
+                "EMAIL": "u_92d329a3b12862018f7e23219b2e9a20a260aff943c6cebabe269e026db0795a"
+            },
+            {
+                "SUBGROEPID": 5786326,
+                "SUBGROEPCODE": "PBA-AGR-VOE/2A2",
+                "DEELGROEPID": 26259,
+                "NAAM": "u_08f98d2633282556f4b6a83d307fad4497a56433285915d3a8899f74f33f8e61",
+                "EMAIL": "u_d519326ebb8776ae27557d3492406eb204cfc98379abecbaa416f74c543cf87e"
+            },
+            {
+                "SUBGROEPID": 5786326,
+                "SUBGROEPCODE": "PBA-AGR-VOE/2A2",
+                "DEELGROEPID": 26259,
+                "NAAM": "u_b16a87fa1d24383fbda5d91632cb8084000571aaa0ad8689c30f51322f4a4e26",
+                "EMAIL": "u_c011afddd99406c84a1ab608ad387f6b9978bd344ed74a8dac911ab1d7e5be36"
+            }
+        ],
+        "count": 3
+    }
+}

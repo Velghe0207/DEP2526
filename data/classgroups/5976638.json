@@ -1,0 +1,28 @@
+{
+    "students": {
+        "students": [
+            {
+                "SUBGROEPID": 5976638,
+                "SUBGROEPCODE": "PBA-TIN-TI/VT/NET/S1",
+                "DEELGROEPID": 26496,
+                "NAAM": "u_3b39b16bc5d4182c7344277c42b287d5fe75fbf0640985dc8baa9cbf2c6478a9",
+                "EMAIL": "u_b8495d6afa93b628b25d274a35da3d840b6dff48e9b93fd4feec57c360f38d5c"
+            },
+            {
+                "SUBGROEPID": 5976638,
+                "SUBGROEPCODE": "PBA-TIN-TI/VT/NET/S1",
+                "DEELGROEPID": 26496,
+                "NAAM": "u_818d219ab941c7cf745edb4e65a07da2116bb3e40d8615c1f720a52125a380f8",
+                "EMAIL": "u_be0d1bdbbce08399c4dd7e644ae8fa2ad948cb1697011072372e459fdf902a4b"
+            },
+            {
+                "SUBGROEPID": 5976638,
+                "SUBGROEPCODE": "PBA-TIN-TI/VT/NET/S1",
+                "DEELGROEPID": 26496,
+                "NAAM": "u_9275daa8e56ee8ef3804cbcebe47c340de05303a52dde34096c5fe56277257ab",
+                "EMAIL": "u_84e30ffc6f70aef2b332c35bf1be60505ce6d999a20a0d2d53e3231cefc888aa"
+            }
+        ],
+        "count": 3
+    }
+}

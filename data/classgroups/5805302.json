@@ -1,0 +1,42 @@
+{
+    "students": {
+        "students": [
+            {
+                "SUBGROEPID": 5805302,
+                "SUBGROEPCODE": "PBA-AGR-GM-PM/2",
+                "DEELGROEPID": 25873,
+                "NAAM": "u_5091a67414dfddcfef01ad3888da9c8964c7e3cae7b2acc88cfd60faf4c52d02",
+                "EMAIL": "u_09d73e877a613f997039962431c2b193727d158cdd8e1d539c1981a9d991159d"
+            },
+            {
+                "SUBGROEPID": 5805302,
+                "SUBGROEPCODE": "PBA-AGR-GM-PM/2",
+                "DEELGROEPID": 25873,
+                "NAAM": "u_b7e1ddec005948bccd14d7b57d661fbb481f3798aaf9c35abbf0f7399ca75c65",
+                "EMAIL": "u_f8a670d5e6c370e6b000008f3a76f2ee31ca6caefd9fc8cabbaa7b3f4040fdbf"
+            },
+            {
+                "SUBGROEPID": 5805302,
+                "SUBGROEPCODE": "PBA-AGR-GM-PM/2",
+                "DEELGROEPID": 25873,
+                "NAAM": "u_1f81333a70139354ce9dbb94ea8db9b03ee1e40b5fde49af2908c0bef3ee12d3",
+                "EMAIL": "u_514b7773bf09b0bae5a5679c48a0717089edbc7ebf610afaa02a538ffd715bc9"
+            },
+            {
+                "SUBGROEPID": 5805302,
+                "SUBGROEPCODE": "PBA-AGR-GM-PM/2",
+                "DEELGROEPID": 25873,
+                "NAAM": "u_857d76bc0d6369c31ebac08037ae95b3257c15ae3d5984a3152b0774c36debd3",
+                "EMAIL": "u_7342aa1a2e8da7a27ba3fb96b7d99084bf24c3e0e77c7f7ed0733c068baea05f"
+            },
+            {
+                "SUBGROEPID": 5805302,
+                "SUBGROEPCODE": "PBA-AGR-GM-PM/2",
+                "DEELGROEPID": 25873,
+                "NAAM": "u_d73cfd90548440d08a52e911c6cb987bf585b5d00168730156230e6baaacfba1",
+                "EMAIL": "u_21d4438a83075bb0ea4a14e02b353e00589539f1a3294af9f52cfe5445299264"
+            }
+        ],
+        "count": 5
+    }
+}

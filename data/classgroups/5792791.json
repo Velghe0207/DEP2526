@@ -1,0 +1,91 @@
+{
+    "students": {
+        "students": [
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_5be9188d8e0e62fa842fd1b69741879bc862038ba8f60c07761db5168088dc7a",
+                "EMAIL": "u_4b69a3eacc33a03735b7880cde33cbff24416ba7500773ae29aec7a2d91465f2"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_bb6c0e3e88f924b654200bb64f5a95e3d6347f398a483a16268e7bdcfd351e52",
+                "EMAIL": "u_38b277adc5094103e990110c5096fcbfce6e3763bbd1dfc8a6aa35569d667c51"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_334d0ce4318915322e36763dbfea56409cedd38965951e3d7de693ad28ac03db",
+                "EMAIL": "u_b9d1902d66775b1c5b8fd79185cca597643fe9162f4a286566f24fce2a569d4f"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_0976da4afb6e57346effc12149240bab3ffed769b2434bf93ccf96d325d4e5e3",
+                "EMAIL": "u_5bf74842353cb44236539eb9a1075a97b359c1ff6507e36afaf972ab8e5c7a10"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_dd2e4e3a68f51ecd03093264242345167def4783af3b6b3eb1d646092fd88ca1",
+                "EMAIL": "u_00a53277ab0858093dca7a3bbe9c85ec71e503432cb8d631fac987c84528cbfb"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_b73c613ebc4f3d34edeb10e1ea2063ae2b6cf71d7e381dadcd75d72eac32d99b",
+                "EMAIL": "u_66171a9b58aa3f7bceb0cde8fccf4b10b9858237b3a6682a57a653ce0ca2fe71"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_ec374840d575bad13e9fbef75cca501984c6cf4b2259b2b733d6024b1364412e",
+                "EMAIL": "u_9c16726180c35397799336e989c5e51af2f209b5df97a47a854bf73d92c6f28c"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_8b08497af592505bc6e36ef5fd54a2ca7389672ca0110f0872ce63a20cc88092",
+                "EMAIL": "u_c5b94d5aae8f64251b3e90a24b2bd02945ae52f4066c88218750a540e4f723a5"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_f53f777f4b47648fc6b115c2e152b546d749c675e32d5bf730e0cca4206f7b0f",
+                "EMAIL": "u_6706bd688d8fdad845221dd218b185969c63a69330e18d305d59e02d184490c4"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_5c8676867505c8f0609e9c0aabec1aa444b96434129b6da6036c31526486e0c4",
+                "EMAIL": "u_a9b485f6755c355f643b9e2c167e34cd4472a2da653bab092425976de6792bb9"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_9137a3240cc70881c367bd25a5cd7dec644a2e13d078308eb7ebbb84cf90b277",
+                "EMAIL": "u_fafcd275d1e277a1296370b396af5b509aa5bb47615724e110698af0c77fc402"
+            },
+            {
+                "SUBGROEPID": 5792791,
+                "SUBGROEPCODE": "PBA-AGR-DZ/2D",
+                "DEELGROEPID": 26947,
+                "NAAM": "u_a5b66a1ac0a548036bad8cfce4186ef60996f84261c82b6492889d9de40d028b",
+                "EMAIL": "u_2905f1a2db7ddb87672fd4a3ddd76576e600d4afcc3bd085e8bdc281f9017533"
+            }
+        ],
+        "count": 12
+    }
+}

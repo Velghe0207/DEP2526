@@ -1,0 +1,61 @@
+{
+    "students": [
+        {
+            "SUBGROEPID": 5787962,
+            "SUBGROEPCODE": "PBA-TIN-TI/2B",
+            "DEELGROEPID": 26656,
+            "NAAM": "u_1b5d2ae067f8c4fae3935f928646de5262640dec5d17970d83c49046c921773f",
+            "EMAIL": "u_7b51d2366c7a1c35b63ef9b512401f2cc8528d9cb4c3e098bd2956208e4219ff"
+        },
+        {
+            "SUBGROEPID": 5787962,
+            "SUBGROEPCODE": "PBA-TIN-TI/2B",
+            "DEELGROEPID": 26656,
+            "NAAM": "u_8f0be1950e078d7fdfa74a1ccb2f22ea915e1906eb21abe7bfc1cc6fae5fbe64",
+            "EMAIL": "u_079fcd1117b166c0883d3e4275320d4fb4b5673015e60293b4865077479edb16"
+        },
+        {
+            "SUBGROEPID": 5787962,
+            "SUBGROEPCODE": "PBA-TIN-TI/2B",
+            "DEELGROEPID": 26656,
+            "NAAM": "u_8729e6646074bee1e6beb6604ed51c67e2e7a6b449d63095f2c953681b3869a2",
+            "EMAIL": "u_13fac7ed725d699f869880c6b70a52817383ef259b99d1627a121eab301135d0"
+        },
+        {
+            "SUBGROEPID": 5787962,
+            "SUBGROEPCODE": "PBA-TIN-TI/2B",
+            "DEELGROEPID": 26656,
+            "NAAM": "u_7a58341ddf6f5fe40d311bec499010932b64f11f02bdd0b9ad0692b031f4a132",
+            "EMAIL": "u_afd6b7b462c6038ee832036b51b5f4b8ef36acefc769cce786383943e03e39cf"
+        },
+        {
+            "SUBGROEPID": 5787962,
+            "SUBGROEPCODE": "PBA-TIN-TI/2B",
+            "DEELGROEPID": 26656,
+            "NAAM": "u_09e8ac9d1f010400e377e4cec79b8fcb9455b5acbe03b72de9707634972db6ef",
+            "EMAIL": "u_440040f652d013253a5370bbed8b2b2c4f78841f391658a6c39032c68fb8cf3b"
+        },
+        {
+            "SUBGROEPID": 5787962,
+            "SUBGROEPCODE": "PBA-TIN-TI/2B",
+            "DEELGROEPID": 26656,
+            "NAAM": "u_5297b62db03c93f07c76dac137342072c94930b13135d37c5ff6c90b20a4c319",
+            "EMAIL": "u_741a7c2f4ecd189005bf710024e8dc9c32f2bc287a58cf9c98daa257f2aecfca"
+        },
+        {
+            "SUBGROEPID": 5787962,
+            "SUBGROEPCODE": "PBA-TIN-TI/2B",
+            "DEELGROEPID": 26656,
+            "NAAM": "u_479a94d2911885763abe864d8b56798cd27b1ca92b55f8449bf2ccba74ef630d",
+            "EMAIL": "u_a51c01b3535945119dc9fa9689d929272d956051cf21a90430e4bed3462751f9"
+        },
+        {
+            "SUBGROEPID": 5787962,
+            "SUBGROEPCODE": "PBA-TIN-TI/2B",
+            "DEELGROEPID": 26656,
+            "NAAM": "u_acfe78df8e4bf6d7dfaa12e5d571a2caf5165455fc86c0a81a45d2af47e614bf",
+            "EMAIL": "u_e3935ec32adbff35dc0c3f87c631e31f451c40f9c3530255737070fb880766a3"
+        }
+    ],
+    "count": 8
+}

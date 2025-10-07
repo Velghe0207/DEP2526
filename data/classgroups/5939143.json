@@ -1,0 +1,47 @@
+{
+    "students": [
+        {
+            "SUBGROEPID": 5939143,
+            "SUBGROEPCODE": "PBA-TIN-TI/2D",
+            "DEELGROEPID": 26915,
+            "NAAM": "u_22c7a26e5740ad3716d3e39bccb78cc1cdb6940e7d496a7760d7250c0c92db13",
+            "EMAIL": "u_2b1d150ce3d0022bba4191630cdce92d6719b50c482c90ddfb7230f222de603b"
+        },
+        {
+            "SUBGROEPID": 5939143,
+            "SUBGROEPCODE": "PBA-TIN-TI/2D",
+            "DEELGROEPID": 26915,
+            "NAAM": "u_7d22c78166db8060ab5b19b5acdcb036a7ac153f2838d0b9425f22b62a458bd7",
+            "EMAIL": "u_314d910cc1760b64a6a75022d257ac879656106dba6bec7fa30a38a86a0c1cf8"
+        },
+        {
+            "SUBGROEPID": 5939143,
+            "SUBGROEPCODE": "PBA-TIN-TI/2D",
+            "DEELGROEPID": 26915,
+            "NAAM": "u_dd266455051a8a0f8c363951257348ccf66aa8eea7560ba87302dcae25877f3e",
+            "EMAIL": "u_5c99434ca7669b0c66f531180f7b03747201010ba2e34f7638c9e61fa2846ee4"
+        },
+        {
+            "SUBGROEPID": 5939143,
+            "SUBGROEPCODE": "PBA-TIN-TI/2D",
+            "DEELGROEPID": 26915,
+            "NAAM": "u_39dddc27e2a35e34488cb89aa7dd4f165aa6fec7cfb23ec07d49bfeeaac855bd",
+            "EMAIL": "u_e898ed87395cee0d68f964e0959e5b53d818e33e786fefb9625fa099ff73586d"
+        },
+        {
+            "SUBGROEPID": 5939143,
+            "SUBGROEPCODE": "PBA-TIN-TI/2D",
+            "DEELGROEPID": 26915,
+            "NAAM": "u_0d8fe0abde3ce77e6dd8d1dde7c9a0bcc235a8fb605603cf13a61a9b1d65502a",
+            "EMAIL": "u_29d786aa849714ff933345da6a1d9f3a921a8fd879af06d3e7edc5859e81ed36"
+        },
+        {
+            "SUBGROEPID": 5939143,
+            "SUBGROEPCODE": "PBA-TIN-TI/2D",
+            "DEELGROEPID": 26915,
+            "NAAM": "u_acfe78df8e4bf6d7dfaa12e5d571a2caf5165455fc86c0a81a45d2af47e614bf",
+            "EMAIL": "u_e3935ec32adbff35dc0c3f87c631e31f451c40f9c3530255737070fb880766a3"
+        }
+    ],
+    "count": 6
+}

@@ -1,0 +1,82 @@
+{
+    "students": [
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_18d74d2422d9057039e831fddde20326ee8312c67d552decfe4e840fa7b81d09",
+            "EMAIL": "u_e59689ac4e7f2a60dac0395cc6862cb0526264906bc91c518b1032ca8a3cb3a0"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_0062d5e168d024caa0454d1ff8eda8f00b46b5f8a314efbd0ed35ab0da738e9f",
+            "EMAIL": "u_e5f0dfa74c874ca2c6f767dd82b86a4a1173350614f47b324b28f6d01d20411f"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_8b49b16a6461ce4e67a9105001aa7d42a2b30b4bf78472b94810926de11e605f",
+            "EMAIL": "u_cb21746f5347bbf656c52f82e5faa558db91caefe2a3a4004b2e6f57e51f7c05"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_92936254476ef67c72fc3c8eae829bba0fe8d7b98c44c2cc07165a151c5280cc",
+            "EMAIL": "u_18f7da2f3c8925c6e38bbc2d3e1e464a08bc591e60c818b702e11a9ac87050eb"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_911a49bf85afda0110e8f292ca95fc478a0a55731e96acd702b603410afdc1b1",
+            "EMAIL": "u_2a5757ce3d71c29a66adc12894ca50f2973de23998a808f6a005c62ee55e0ed9"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_3976465ebc8369725e05864017e130b3db3be9639e336332556bf157c400ad06",
+            "EMAIL": "u_699ed2d0bf83bc64cfd0393f3b31ccb6354ebfd557b12d5260257a7dc18a00c7"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_d1b90a07a262dae3633eaa50f95baf07ece451b80cf077c6b57d9b181e2d6956",
+            "EMAIL": "u_4cc920bd60c78533a7550e6ba7bbde184ea8ccdaa7c160b8ca4fe11e13b36234"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_e07484f43a8fa9a17f916dcf7b145150047097b46f9ddf2dbc17bd85ca055cc5",
+            "EMAIL": "u_c033caec32ab36f433d274f4d480efa0c1538b2993d2b43e05e3f8bb85f70dca"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_15ea609a64fd66529e454ea0d77d489323c7cd4da857f163776cf93de8ef1b82",
+            "EMAIL": "u_e595a8da4d8c111a06b389ccae5dea2cdad7289d44f931f0589cf21243aa9025"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_1cadda33a42560f7566ce1fba140401277771cf8a19a4458e2bf5e7e31992eb7",
+            "EMAIL": "u_7a212339421d2ac013899f84f3696d8ec17f0b77031806a002c5514d73bdbedd"
+        },
+        {
+            "SUBGROEPID": 5823760,
+            "SUBGROEPCODE": "PBA-AGR-VOE/2A1",
+            "DEELGROEPID": 26178,
+            "NAAM": "u_f8845e754f6bd4b1d6f33d8031085cd668842721ee9db15846daf3744b51934d",
+            "EMAIL": "u_8f3f5db334a635f45a48c709b153a6557770fb94542c13ab88bf498a0187fde6"
+        }
+    ],
+    "count": 11
+}

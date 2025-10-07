@@ -1,0 +1,35 @@
+{
+    "students": {
+        "students": [
+            {
+                "SUBGROEPID": 5889307,
+                "SUBGROEPCODE": "PBA-OM-HCM/3",
+                "DEELGROEPID": 26350,
+                "NAAM": "u_9254d3fc526ce228d6329e1227d7ec7fd5bb2a1f686f2422761f7ac3aa164604",
+                "EMAIL": "u_f756d629b3c9a300784df6417afa64207d53f501586ff1dc223cccf21bbba098"
+            },
+            {
+                "SUBGROEPID": 5889307,
+                "SUBGROEPCODE": "PBA-OM-HCM/3",
+                "DEELGROEPID": 26350,
+                "NAAM": "u_5bbfc6e08ad40a964be4f9497c570fa7d15209cf8ad8f6995ba97eafb0890033",
+                "EMAIL": "u_6635d5bfcfe05feb1bb954dca6d1c08b30b694b125c5d7d7f592a351333c1e39"
+            },
+            {
+                "SUBGROEPID": 5889307,
+                "SUBGROEPCODE": "PBA-OM-HCM/3",
+                "DEELGROEPID": 26350,
+                "NAAM": "u_94cb2f68c03ed1f2e8b2101e1656ca9da77df96e5dbd331f38dde4bf61f0e12c",
+                "EMAIL": "u_212f435a91c746dfb8a7f57792db0e1da49060f1be21c0da2b3c232129fadb47"
+            },
+            {
+                "SUBGROEPID": 5889307,
+                "SUBGROEPCODE": "PBA-OM-HCM/3",
+                "DEELGROEPID": 26350,
+                "NAAM": "u_41a5e6c92b96454bd36ee22408272132be142a23a8e571ce879194fc6ba77b99",
+                "EMAIL": "u_88d0722c6744ac96864a228b80a737e7bec2a8d46ab43f3118b8cfc1a2a4af67"
+            }
+        ],
+        "count": 4
+    }
+}

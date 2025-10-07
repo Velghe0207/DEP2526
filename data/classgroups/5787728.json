@@ -1,0 +1,84 @@
+{
+    "students": {
+        "students": [
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_fc1e2c6a9800dcd9779b89c8d78b7325dd2558a4a42efc9519dcfd6e25e68001",
+                "EMAIL": "u_73f3d0ee40d669e05099219d281e39b2198c4c1d6efb7bb82c2a634a5b4f50cc"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_3953595979ea36b35e61aaf756a4acf2a4e3b39fd3dde449977151d3de3c10f9",
+                "EMAIL": "u_6719875938ea366f1ae1c14bd7f14f45c3a6d003a87a57df91869a115cfa25e7"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_bacf5854aca97ce7aaec6ca9aff8ec87ce4887bc3cf5ea19fbe5873b13869ebf",
+                "EMAIL": "u_61bd5805b6ba5e53966865d8cc49e1444b885fa3ed408b5bcb5e502df0ddfa95"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_0c564d6d7826c2990c67f77dbc69ae7bb7d9c9d56f7cb2efb81108a68e5e0a69",
+                "EMAIL": "u_bf203b8fd3311093bbe83a6fea8ea1bd71d9404a73630c22372ae4db81b281df"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_426b458186a1e4e8b7004cf9d2d8fb0d0a4682e3ce11422f19b9f2072c6c4b86",
+                "EMAIL": "u_3ef272024fe172f34efcbe6e5f7163b23f45ca74a3eafdf1fbfab56fdd82ec29"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_f64aefce55e18b4d10efd79f89f9a2167d5193e1ab2d8f61248e1e379a5bc059",
+                "EMAIL": "u_8ef7b17e43865afbd5dc03264829f41f6bfcb27c37c546e34644dc4973daeb55"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_d57ae73b97da3435bbd79d4c7e5758ef98880cc06e42b9b021624f6c9f2a0b97",
+                "EMAIL": "u_94bf305e49554cab8267b98786eb546641bec2e4d64121f93997c3899d363822"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_9b18dae0d80bd5a1f5b4ec9a31c08afba16a41ee3bda9a2e39fb2c9ed048d3c4",
+                "EMAIL": "u_daac699182d721e513ad305209c7fb1e711ea19eb65fe34cd12804f30b976ffd"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_59281d7b37b4ee656ee43a98b7cc20db99c16b3b16474d4e0ec8c032b4c2b307",
+                "EMAIL": "u_6f5227b4309b361dd3a726d2248c84b4aaf2d92661fa1d45c33ed53e9164a0ed"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_48dc0d97b4f23061171025f9a5c654e510ad142c61942daec12be97662c24459",
+                "EMAIL": "u_600e848a8b128cb2603d40962901eb6c54786d1064cbca0f5c57c126d376101a"
+            },
+            {
+                "SUBGROEPID": 5787728,
+                "SUBGROEPCODE": "PBA-OM-BL/3",
+                "DEELGROEPID": 26729,
+                "NAAM": "u_1ce617fe012d34d286d65bb96577dab88361419f3dd009e48694a863f140805d",
+                "EMAIL": "u_236e5cb43b95f18796e9df423f14da9c08d96d50f8cea77daa3aa98e9b747661"
+            }
+        ],
+        "count": 11
+    }
+}

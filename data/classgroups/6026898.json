@@ -1,0 +1,35 @@
+{
+    "students": {
+        "students": [
+            {
+                "SUBGROEPID": 6026898,
+                "SUBGROEPCODE": "PBA-VG-LAM/3SEM1",
+                "DEELGROEPID": 26636,
+                "NAAM": "u_fa7085b58ceb193dfce29c2695aa7366c8a01dfb559f9fced81eed27b0b485e2",
+                "EMAIL": "u_b877cb237de2257430a9b28f21965f3dab01ff79638f73483edec903d111470d"
+            },
+            {
+                "SUBGROEPID": 6026898,
+                "SUBGROEPCODE": "PBA-VG-LAM/3SEM1",
+                "DEELGROEPID": 26636,
+                "NAAM": "u_49f9a3c6b5e9a32897909ada753188ac7dc1490fcd661dc5560f462404ae1699",
+                "EMAIL": "u_fb4a879640fcb9ebad41acafa719dfaec47c37f93f5f9ddf10dd3b7ded801dbd"
+            },
+            {
+                "SUBGROEPID": 6026898,
+                "SUBGROEPCODE": "PBA-VG-LAM/3SEM1",
+                "DEELGROEPID": 26636,
+                "NAAM": "u_1fb95169839563a6693a7d36e16a18598416e4b91a442a5e9fb5263c249887ba",
+                "EMAIL": "u_963618ea3614c791c5483d591e3369693c845de1d5f3fe6e59174622b8cdcc75"
+            },
+            {
+                "SUBGROEPID": 6026898,
+                "SUBGROEPCODE": "PBA-VG-LAM/3SEM1",
+                "DEELGROEPID": 26636,
+                "NAAM": "u_ea79dc4017861dfafac2128278878ccc9d45e5738fbea4e1f0466a5a73b2b53a",
+                "EMAIL": "u_2cc1fad0f6085441b436c2af0f699c3edfcada0355115b1c3268852449b21ff3"
+            }
+        ],
+        "count": 4
+    }
+}
