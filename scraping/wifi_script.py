@@ -30,39 +30,16 @@ def get_wifi_clients(
 
 def main():
 
-    # SQL Server configuratie via pymssql (werkt zonder ODBC driver)
-    server = "127.0.0.1"  # of 'ubuntu' als dat werkt
-    port = 1500
+    server = "127.0.0.1"  # SQL Server inside the VM
     database = "DEP2_staging"
     username = "sa"
     password = "dep2025-G12"
+    driver = "ODBC Driver 18 for SQL Server"
 
-    # SQLAlchemy engine via pymssql
-    engine = create_engine(f"mssql+pymssql://{username}:{password}@{server}:{port}/{database}")
-
-    # # SQL Server configuratie (lokaal testen - pas aan voor je eigen SQL server)
-    # server = "127.0.0.1,1500"
-    # database = "DEP2_staging"
-    # username = "sa"
-    # password = "dep2025-G12"
-    # driver = "ODBC Driver 17 for SQL Server"
-
-    # # Verbinden met de database aan de hand van sqlalchemy
-    # engine = create_engine(
-    #     f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
-    # )
-
-    # SQL Server configuratie (pas aan voor je eigen SQL server)
-    # server = "ubuntu"
-    # database = "DEP2_staging"
-    # username = "sa"
-    # password = "dep2025-G12"
-    # driver = "ODBC Driver 18 for SQL Server"
-
-    # Verbinden met de database aan de hand van sqlalchemy
-    # engine = create_engine(
-    #     f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}&TrustServerCertificate=yes"
-    # )
+    # SQLAlchemy engine using ODBC
+    engine = create_engine(
+        f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}&TrustServerCertificate=yes"
+    )
 
     # Saving secret in a variable
     secret = os.getenv("SECRET")
