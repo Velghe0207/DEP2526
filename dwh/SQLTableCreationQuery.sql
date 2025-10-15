@@ -39,12 +39,6 @@ CREATE TABLE [dbo].[DimRoom]
     Area [int] NOT NULL
 )
 
-CREATE TABLE [dbo].[DimUser]
-(
-    UserKey [int] NOT NULL PRIMARY KEY,
-    UserName [varchar](50) NOT NULL,
-)
-
 CREATE TABLE [dbo].[DimSubgroup]
 (
     SubgroupKey [int] NOT NULL PRIMARY KEY,
@@ -59,28 +53,6 @@ CREATE TABLE [dbo].[DimClass]
     StudyProgramName [varchar](50) NOT NULL
 )
 
-CREATE TABLE [dbo].[BridgeUserSubgroup]
-(
-    UserKey [int] NOT NULL FOREIGN KEY REFERENCES DimUser(UserKey),
-    SubgroupKey [int] NOT NULL FOREIGN KEY REFERENCES DimSubgroup(SubgroupKey),
-    CONSTRAINT PK_BridgeUserSubgroup PRIMARY KEY (UserKey, SubgroupKey)
-)
-
-CREATE TABLE [dbo].[BridgeClassSubgroup]
-(
-    ClassKey [int] NOT NULL FOREIGN KEY REFERENCES DimClass(ClassKey),
-    SubgroupKey [int] NOT NULL FOREIGN KEY REFERENCES DimSubgroup(SubgroupKey),
-    CONSTRAINT PK_BridgeClassSubgroup PRIMARY KEY (ClassKey, SubgroupKey)
-)
-
-CREATE TABLE [dbo].[FactWifiConnection]
-(
-    DateKey [int] NOT NULL FOREIGN KEY REFERENCES DimDate(DateKey),
-    TimeKey [int] NOT NULL FOREIGN KEY REFERENCES DimTime(TimeKey),
-    UserKey [int] NOT NULL FOREIGN KEY REFERENCES DimUser(UserKey),
-    CONSTRAINT PK_FactWifiConnection PRIMARY KEY (DateKey, TimeKey, UserKey)
-)
-
 CREATE TABLE [dbo].[FactLecture]
 (
     DateKey [int] NOT NULL FOREIGN KEY REFERENCES DimDate(DateKey),
@@ -88,8 +60,9 @@ CREATE TABLE [dbo].[FactLecture]
     UntilTimeKey [int] NOT NULL FOREIGN KEY REFERENCES DimTime(TimeKey),
     ClassKey [int] NOT NULL FOREIGN KEY REFERENCES DimClass(ClassKey),
     RoomKey [int] NOT NULL FOREIGN KEY REFERENCES DimRoom(RoomKey),
+    SubgroupKey [int] NOT NULL FOREIGN KEY REFERENCES DimSubgroup(SubgroupKey),
     UserCount [int],
     TotalStudents [int],
     AttendanceRate AS (CASE WHEN TotalStudents = 0 THEN 0 ELSE CAST(UserCount AS float) / TotalStudents END),
-    CONSTRAINT PK_FactLecture PRIMARY KEY (DateKey, FromTimeKey, UntilTimeKey, ClassKey, RoomKey)
+    CONSTRAINT PK_FactLecture PRIMARY KEY (DateKey, FromTimeKey, UntilTimeKey, ClassKey, RoomKey, SubgroupKey)
 )
