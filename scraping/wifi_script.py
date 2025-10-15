@@ -29,6 +29,18 @@ def get_wifi_clients(
 
 
 def main():
+    # SQL Server configuratie (lokaal testen - pas aan voor je eigen SQL server)
+    server = "127.0.0.1,1500"
+    database = "DEP2_staging"
+    username = "sa"
+    password = "dep2025-G12"
+    driver = "ODBC Driver 17 for SQL Server"
+
+    # Verbinden met de database aan de hand van sqlalchemy
+    engine = create_engine(
+        f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
+    )
+
     # Saving secret in a variable
     secret = os.getenv("SECRET")
     if not secret:
@@ -49,20 +61,32 @@ def main():
     df_wifi_edu["DateKey"] = df_wifi_edu["timestamp"].dt.strftime("%Y%m%d").astype(int)
     df_wifi_edu["TimeKey"] = df_wifi_edu["timestamp"].dt.strftime("%H%M%S").astype(int)
 
-    # Generate UserKey
-    user_mapping = {
-        username: idx + 1
+    # Fetch existing DimUser data
+    existing_users = pd.read_sql("SELECT UserKey, UserName FROM DimUser", engine)
+
+    # Create a dictionary of existing usernames and their UserKeys
+    existing_user_mapping = dict(zip(existing_users["UserName"], existing_users["UserKey"]))
+
+    # Generate UserKey starting from the last UserKey
+    max_user_key = max(existing_user_mapping.values(), default=0)
+    new_user_mapping = {
+        username: idx + 1 + max_user_key
         for idx, username in enumerate(df_wifi_edu["username"].unique())
+        if username not in existing_user_mapping
     }
+
+    # Combine existing and new user mappings
+    user_mapping = {**existing_user_mapping, **new_user_mapping} # ** is used to unpack dictionaries
     df_wifi_edu["UserKey"] = df_wifi_edu["username"].map(user_mapping)
 
-    # Create DimUser table
+    # Create DimUser table (only for new users)
     dim_user = pd.DataFrame(
-        list(user_mapping.items()), columns=["UserName", "UserKey"]
+        list(new_user_mapping.items()), columns=["UserName", "UserKey"]
     )[["UserKey", "UserName"]]
 
     # Create FactWifiConnection table
     fact_wifi_connection = df_wifi_edu[["DateKey", "TimeKey", "UserKey"]]
+    fact_wifi_connection = fact_wifi_connection.drop_duplicates().reset_index(drop=True)
 
     # Writing to csv files
     # filename = f"data/wifi_clients/wifi_clients_{time.strftime('%Y%m%d_%H%M%S')}.csv"
@@ -70,26 +94,14 @@ def main():
     # dim_user.to_csv("DimUser.csv", index=False)
     # fact_wifi_connection.to_csv("FactWifiConnection.csv", index=False)
 
-    # SQL Server configuration on VM or local (change for your own SQL server)
-    # server = "127.0.0.1,1500"
-    # database = "DEP"
-    # username = "SA"
-    # password = "Passwordgroep21!"
+    # server = "LAPTOP-R1GLLN97"
+    # database = "loltest2"
     # driver = "ODBC Driver 17 for SQL Server"
 
-    # connection with sqlalchemy
+    # # Creation of database engine
     # engine = create_engine(
-    #     f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
+    #     f"mssql+pyodbc://@{server}/{database}?trusted_connection=yes&driver={driver}"
     # )
-
-    server = "LAPTOP-R1GLLN97"
-    database = "loltest2"
-    driver = "ODBC Driver 17 for SQL Server"
-
-    # Creation of database engine
-    engine = create_engine(
-        f"mssql+pyodbc://@{server}/{database}?trusted_connection=yes&driver={driver}"
-    )
 
     # Writing dataframes to SQL Server
     dim_user.to_sql("DimUser", engine, if_exists="append", index=False)
