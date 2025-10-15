@@ -48,7 +48,6 @@ def insert_new_users(df_wifi_edu, engine, df_existing_users):
     else:
         print("No new users to add.")
 
-
 def map_user_keys(df_wifi_edu, engine):
     """Function to map UserKeys to usernames in df_wifi_edu (needed for inserting into FactWifiConnection -> DateKey, TimeKey, UserKey)"""
     df_existing_users = pd.read_sql("SELECT UserKey, UserName FROM DimUser", engine)
@@ -92,8 +91,6 @@ def insert_new_fact_rows(df_wifi_edu, engine):
         print(f"Inserted {len(fact_wifi_connection)} new rows into FactWifiConnection.")
     else:
         print("No new FactWifiConnection rows to insert.")
-
-
 
 def main():
     # SQL Server config inside the VM
@@ -149,7 +146,6 @@ def main():
 
     # Write all wifi connections to FactWifiConnection
     insert_new_fact_rows(df_wifi_edu, engine)
-
 
 if __name__ == "__main__":
     main()
