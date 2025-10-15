@@ -1,20 +1,20 @@
 CREATE TABLE [dbo].[DimUser]
 (
-    UserKey [int] NOT NULL PRIMARY KEY,
-    UserName [varchar](50) NOT NULL
-)
+    UserKey INT IDENTITY(1,1) PRIMARY KEY,
+    UserName VARCHAR(70) NOT NULL UNIQUE
+);
 
 CREATE TABLE [dbo].[BridgeUserSubgroup]
 (
-    UserKey [int] NOT NULL FOREIGN KEY REFERENCES [dbo].[DimUser](UserKey),
-    SubgroupKey [int] NOT NULL,
+    UserKey INT NOT NULL FOREIGN KEY REFERENCES [dbo].[DimUser](UserKey),
+    SubgroupKey INT NOT NULL,
     CONSTRAINT PK_BridgeUserSubgroup PRIMARY KEY (UserKey, SubgroupKey)
-)
+);
 
 CREATE TABLE [dbo].[FactWifiConnection]
 (
-    DateKey [int] NOT NULL,
-    TimeKey [int] NOT NULL,
-    UserKey [int] NOT NULL FOREIGN KEY REFERENCES [dbo].[DimUser](UserKey),
+    DateKey INT NOT NULL,
+    TimeKey INT NOT NULL,
+    UserKey INT NOT NULL FOREIGN KEY REFERENCES [dbo].[DimUser](UserKey),
     CONSTRAINT PK_FactWifiConnection PRIMARY KEY (DateKey, TimeKey, UserKey)
-)
+);

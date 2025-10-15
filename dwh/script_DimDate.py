@@ -86,7 +86,7 @@ dim_date_df = create_dim_date()
 
 # SQL Server configuratie (lokaal testen - pas aan voor je eigen SQL server)
 server = "127.0.0.1,1500"
-database = "DEP_staging"
+database = "DEP2"
 username = "sa"
 password = "dep2025-G12"
 driver = "ODBC Driver 17 for SQL Server"

@@ -30,7 +30,8 @@ def get_wifi_clients(
 
 def main():
 
-    server = "127.0.0.1"  # SQL Server inside the VM
+    # SQL Server config binnen de VM
+    server = "127.0.0.1"  
     database = "DEP2_staging"
     username = "sa"
     password = "dep2025-G12"
@@ -40,6 +41,18 @@ def main():
     engine = create_engine(
         f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}&TrustServerCertificate=yes"
     )
+
+    # # SQL Server configuratie (Tunnel forwarding)
+    # server = "127.0.0.1,1500"
+    # database = "DEP2_staging"
+    # username = "sa"
+    # password = "dep2025-G12"
+    # driver = "ODBC Driver 17 for SQL Server"
+
+    # # Verbinden met de database aan de hand van sqlalchemy
+    # engine = create_engine(
+    #     f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
+    # )
 
     # Saving secret in a variable
     secret = os.getenv("SECRET")
@@ -61,55 +74,54 @@ def main():
     df_wifi_edu["DateKey"] = df_wifi_edu["timestamp"].dt.strftime("%Y%m%d").astype(int)
     df_wifi_edu["TimeKey"] = df_wifi_edu["timestamp"].dt.strftime("%H%M%S").astype(int)
 
-    # Fetch existing DimUser data
-    existing_users = pd.read_sql("SELECT UserKey, UserName FROM DimUser", engine)
+    # Fetch existing usernames from DimUser
+    existing_usernames = pd.read_sql("SELECT UserName FROM DimUser", engine)["UserName"]
 
-    # Create a dictionary of existing usernames and their UserKeys
-    existing_user_mapping = dict(zip(existing_users["UserName"], existing_users["UserKey"]))
+    # Find only new usernames
+    new_users = df_wifi_edu.loc[
+        ~df_wifi_edu["username"].isin(existing_usernames), ["username"]
+    ].drop_duplicates()
+    new_users = new_users.rename(columns={"username": "UserName"})
 
-    # Generate UserKey starting from the last UserKey
-    max_user_key = max(existing_user_mapping.values(), default=0)
-    new_user_mapping = {
-        username: idx + 1 + max_user_key
-        for idx, username in enumerate(df_wifi_edu["username"].unique())
-        if username not in existing_user_mapping
-    }
+    # Insert new users
+    if not new_users.empty:
+        new_users.to_sql("DimUser", engine, if_exists="append", index=False)
+        print(f"Added {len(new_users)} new users to DimUser.")
+    else:
+        print("No new users to add.")
 
-    # Combine existing and new user mappings
-    user_mapping = {**existing_user_mapping, **new_user_mapping} # ** is used to unpack dictionaries
+    # Fetch all UserKeys from DimUser and map them to the correct usernames
+    all_users = pd.read_sql("SELECT UserKey, UserName FROM DimUser", engine)
+    user_mapping = dict(zip(all_users["UserName"], all_users["UserKey"]))
     df_wifi_edu["UserKey"] = df_wifi_edu["username"].map(user_mapping)
 
-    # Create DimUser table (only for new users)
-    dim_user = pd.DataFrame(
-        list(new_user_mapping.items()), columns=["UserName", "UserKey"]
-    )[["UserKey", "UserName"]]
-
-    # Create FactWifiConnection table
-    fact_wifi_connection = df_wifi_edu[["DateKey", "TimeKey", "UserKey"]]
-    fact_wifi_connection = fact_wifi_connection.drop_duplicates().reset_index(drop=True)
-
-    # Writing to csv files
-    # filename = f"data/wifi_clients/wifi_clients_{time.strftime('%Y%m%d_%H%M%S')}.csv"
-    # df_wifi.to_csv(filename, index=False)
-    # dim_user.to_csv("DimUser.csv", index=False)
-    # fact_wifi_connection.to_csv("FactWifiConnection.csv", index=False)
-
-    # server = "LAPTOP-R1GLLN97"
-    # database = "loltest2"
-    # driver = "ODBC Driver 17 for SQL Server"
-
-    # # Creation of database engine
-    # engine = create_engine(
-    #     f"mssql+pyodbc://@{server}/{database}?trusted_connection=yes&driver={driver}"
-    # )
-
-    # Writing dataframes to SQL Server
-    dim_user.to_sql("DimUser", engine, if_exists="append", index=False)
-    fact_wifi_connection.to_sql(
-        "FactWifiConnection", engine, if_exists="append", index=False
+    # FactWiFiConnection table
+    fact_wifi_connection = (
+        df_wifi_edu[["DateKey", "TimeKey", "UserKey"]]
+        .drop_duplicates()
+        .reset_index(drop=True)
     )
 
-    print("Dataframe succesvol weggeschreven")
+    # Checking for duplicates before inserting
+    existing_keys = pd.read_sql(
+        "SELECT DateKey, TimeKey, UserKey FROM FactWifiConnection", engine
+    )
+    fact_wifi_connection = fact_wifi_connection.merge(
+        existing_keys, on=["DateKey", "TimeKey", "UserKey"], how="left", indicator=True
+    )
+    fact_wifi_connection = fact_wifi_connection[
+        fact_wifi_connection["_merge"] == "left_only"
+    ]
+    fact_wifi_connection = fact_wifi_connection.drop(columns="_merge")
+
+    # Insert new rows
+    if not fact_wifi_connection.empty:
+        fact_wifi_connection.to_sql(
+            "FactWifiConnection", engine, if_exists="append", index=False
+        )
+        print(f"Inserted {len(fact_wifi_connection)} new rows into FactWifiConnection.")
+    else:
+        print("No new FactWifiConnection rows to insert.")
 
 
 if __name__ == "__main__":
