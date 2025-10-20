@@ -9,20 +9,25 @@ import time
 # Loading environment variables from .env file
 load_dotenv()
 
+
 # API functions
-def get_token(secret: str, url: str = "https://dep.simondg.com/auth/login"):
+def get_token(secret: str, url: str = "https://dep2.simondg.com/auth/login"):
     """Function for POST request to get access token using secret"""
     response = requests.post(url, json={"secret": secret})
     response.raise_for_status()  # Raises an error if the request fails
     return response.json()["access_token"]
 
-def get_wifi_clients(token: str, url: str = "https://dep.simondg.com/wifi-clients/last-30-minutes"):
+
+def get_wifi_clients(
+    token: str, url: str = "https://dep2.simondg.com/wifi-clients/last-30-minutes"
+):
     """Function for GET request to WiFi API"""
     headers = {"Authorization": f"Bearer {token}"}
     response = requests.get(url, headers=headers)
     response.raise_for_status()  # Raises an error if the request fails
     data = response.json()
     return pd.DataFrame(data)
+
 
 # Functions for dataframe processing and writing to datawarehouse
 def insert_new_users(df_wifi_edu, engine, df_existing_users):
@@ -38,7 +43,9 @@ def insert_new_users(df_wifi_edu, engine, df_existing_users):
         if username not in existing_usernames:
             not_existing.append(username)
 
-    df_new_users = df_new_users[df_new_users["username"].isin(not_existing)] # Only keep the usernames that are in not_existing
+    df_new_users = df_new_users[
+        df_new_users["username"].isin(not_existing)
+    ]  # Only keep the usernames that are in not_existing
     df_new_users = df_new_users.rename(columns={"username": "UserName"})
 
     # Write to database if any new users exist
@@ -47,6 +54,7 @@ def insert_new_users(df_wifi_edu, engine, df_existing_users):
         print(f"Added {len(df_new_users)} new users to DimUser.")
     else:
         print("No new users to add.")
+
 
 def map_user_keys(df_wifi_edu, engine):
     """Function to map UserKeys to usernames in df_wifi_edu (needed for inserting into FactWifiConnection -> DateKey, TimeKey, UserKey)"""
@@ -65,36 +73,45 @@ def map_user_keys(df_wifi_edu, engine):
     df_wifi_edu["UserKey"] = user_keys
     return df_wifi_edu
 
+
 def insert_new_fact_rows(df_wifi_edu, engine):
     """Function for writing wifi connections to FactWifiConnection table"""
     # Keep only the relevant columns and remove duplicates
-    fact_wifi_connection = df_wifi_edu[["DateKey", "TimeKey", "UserKey"]].drop_duplicates().reset_index(drop=True)
+    fact_wifi_connection = (
+        df_wifi_edu[["DateKey", "TimeKey", "UserKey"]]
+        .drop_duplicates()
+        .reset_index(drop=True)
+    )
 
     # Read existing rows from the database
-    existing_keys = pd.read_sql("SELECT DateKey, TimeKey, UserKey FROM FactWifiConnection", engine)
+    existing_keys = pd.read_sql(
+        "SELECT DateKey, TimeKey, UserKey FROM FactWifiConnection", engine
+    )
 
     # Merge to find new rows (those not in existing)
     fact_wifi_connection = fact_wifi_connection.merge(
-        existing_keys,
-        on=["DateKey", "TimeKey", "UserKey"],
-        how="left",
-        indicator=True
+        existing_keys, on=["DateKey", "TimeKey", "UserKey"], how="left", indicator=True
     )
 
     # Keep only rows that are in fact_wifi_connection but not in existing_keys
-    fact_wifi_connection = fact_wifi_connection[fact_wifi_connection["_merge"] == "left_only"]
+    fact_wifi_connection = fact_wifi_connection[
+        fact_wifi_connection["_merge"] == "left_only"
+    ]
     fact_wifi_connection = fact_wifi_connection.drop(columns="_merge")
 
     # Insert into database if any new rows exist
     if not fact_wifi_connection.empty:
-        fact_wifi_connection.to_sql("FactWifiConnection", engine, if_exists="append", index=False)
+        fact_wifi_connection.to_sql(
+            "FactWifiConnection", engine, if_exists="append", index=False
+        )
         print(f"Inserted {len(fact_wifi_connection)} new rows into FactWifiConnection.")
     else:
         print("No new FactWifiConnection rows to insert.")
 
+
 def main():
     # SQL Server config inside the VM
-    server = "127.0.0.1"  
+    server = "127.0.0.1"
     database = "DEP2_staging"
     username = "sa"
     password = "dep2025-G12"
@@ -146,6 +163,7 @@ def main():
 
     # Write all wifi connections to FactWifiConnection
     insert_new_fact_rows(df_wifi_edu, engine)
+
 
 if __name__ == "__main__":
     main()
