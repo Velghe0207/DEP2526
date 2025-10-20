@@ -1,3 +1,5 @@
+USE DEP2;
+
 CREATE TABLE [dbo].[DimDate]
 (
     [DateKey] [int] NOT NULL PRIMARY KEY,
@@ -14,8 +16,8 @@ CREATE TABLE [dbo].[DimDate]
     [Year] [int] NOT NULL,
     [Weekday] [int] NOT NULL CHECK ([Weekday] BETWEEN 1 AND 7),
     [DayOfYear] [int] NOT NULL CHECK ([DayOfYear] BETWEEN 1 AND 366),
-    [Season] [nvarchar](50)
-)
+    [Season] [nvarchar](50),
+);
 
 CREATE TABLE [dbo].[DimTime]
 (
@@ -24,8 +26,8 @@ CREATE TABLE [dbo].[DimTime]
     [Minutes] [int] NOT NULL,
     [Seconds] [int] NOT NULL,
     [FullTime] [nvarchar](50) NOT NULL,
-    [TimeAM_PM] [varchar](50) NOT NULL
-)
+    [TimeAM_PM] [varchar](50) NOT NULL,
+);
 
 CREATE TABLE [dbo].[DimRoom]
 (
@@ -36,33 +38,42 @@ CREATE TABLE [dbo].[DimRoom]
     RoomName [varchar](50) NOT NULL,
     Category [varchar](50) NOT NULL,
     Capacity [int] NOT NULL,
-    Area [int] NOT NULL
-)
+    Area [int] NOT NULL,
+);
 
 CREATE TABLE [dbo].[DimSubgroup]
 (
     SubgroupKey [int] NOT NULL PRIMARY KEY,
-    Code [int] NOT NULL,
-)
+    SubgroupName [varchar](50) NOT NULL,
+    SubgroupCode [int] NOT NULL,
+);
+
+CREATE TABLE [dbo].[DimProgram]
+(
+    ProgramKey [int] NOT NULL PRIMARY KEY,
+    ProgramName [varchar](50) NOT NULL,
+    ProgramCode [int] NOT NULL,
+);
 
 CREATE TABLE [dbo].[DimClass]
 (
     ClassKey [int] NOT NULL PRIMARY KEY,
     ClassName [varchar](50) NOT NULL,
-    StudyProgramCode [int] NOT NULL,
-    StudyProgramName [varchar](50) NOT NULL
-)
+    ClassCode [int] NOT NULL,
+);
 
 CREATE TABLE [dbo].[FactLecture]
 (
     DateKey [int] NOT NULL FOREIGN KEY REFERENCES DimDate(DateKey),
     FromTimeKey [int] NOT NULL FOREIGN KEY REFERENCES DimTime(TimeKey),
     UntilTimeKey [int] NOT NULL FOREIGN KEY REFERENCES DimTime(TimeKey),
+    ProgramKey [int] NOT NULL FOREIGN KEY REFERENCES DimProgram(ProgramKey),
     ClassKey [int] NOT NULL FOREIGN KEY REFERENCES DimClass(ClassKey),
-    RoomKey [int] NOT NULL FOREIGN KEY REFERENCES DimRoom(RoomKey),
     SubgroupKey [int] NOT NULL FOREIGN KEY REFERENCES DimSubgroup(SubgroupKey),
+    RoomKey [int] NOT NULL FOREIGN KEY REFERENCES DimRoom(RoomKey),
+    ScheduleID [int] NOT NULL,
     UserCount [int],
     TotalStudents [int],
     AttendanceRate AS (CASE WHEN TotalStudents = 0 THEN 0 ELSE CAST(UserCount AS float) / TotalStudents END),
-    CONSTRAINT PK_FactLecture PRIMARY KEY (DateKey, FromTimeKey, UntilTimeKey, ClassKey, RoomKey, SubgroupKey)
-)
+    CONSTRAINT PK_FactLecture PRIMARY KEY (DateKey, FromTimeKey, UntilTimeKey, ProgramKey, ClassKey, RoomKey, SubgroupKey)
+);

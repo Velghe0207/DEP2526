@@ -39,29 +39,37 @@ def pandify_course_data(soup, url):
     )
     course_data["credits"] = credits_tag.text.strip() if credits_tag else None
 
-    # # Extract description
-    # desc_tag = soup.find("div", class_="course-description")
-    # course_data["description"] = desc_tag.text.strip() if desc_tag else None
-
-    # Extract evaluation methods, which is a table under h4 with text "Evaluatie"
+    # Extract all evaluation tables under h4 tags with text "Evaluatie"
     eval_tag = soup.find("h4", string="Evaluatie")
     if eval_tag:
-        eval_table = eval_tag.find_next("table")
-        if eval_table:
+        all_eval_data = []
+        # Find all tables that follow this h4 tag until the next h4 or major element
+        tables = eval_tag.find_all_next("table")
+        for table in tables:
             eval_data = []
-            for row in eval_table.find_all("tr")[1:]:
+            for row in table.find_all("tr")[1:]:  # Skip header row
                 cols = row.find_all("td")
-                moment = cols[0].text.strip()
-                format = cols[1].text.strip()
-                percentage = cols[2].text.strip()
-                eval_data.append(
-                    {
-                        "moment": moment,
-                        "format": format,
-                        "percentage": percentage,
-                    }
-                )
-            course_data["evaluation_methods"] = eval_data
+                if len(cols) >= 3:  # Ensure there are enough columns
+                    moment = cols[0].text.strip()
+                    format = cols[1].text.strip()
+                    percentage = cols[2].text.strip()
+                    eval_data.append(
+                        {
+                            "moment": moment,
+                            "format": format,
+                            "percentage": percentage,
+                        }
+                    )
+            if eval_data:
+                all_eval_data.append(eval_data)
+
+        if all_eval_data:
+            course_data["evaluation_methods"] = all_eval_data
+        # If no tables found, extract all text under the div following the eval_tag
+        else:
+            eval_div = eval_tag.find_next("div")
+            if eval_div:
+                course_data["evaluation_methods"] = eval_div.text.strip()
 
     # Extract if 2nd chance is available, after the span with text "Tweede examenkans:"
     second_chance_tag = soup.find("span", string="Tweede examenkans: ")
@@ -82,7 +90,7 @@ def fetch_course_data(url):
         raise Exception(f"Failed to load page {url}")
     elif "Studiegids niet beschikbaar" in response.text:
         print(f"Course not available at {url}")
-        return pd.DataFrame()  # Return empty DataFrame for unavailable courses
+        return pd.DataFrame()
 
     soup = BeautifulSoup(response.text, "html.parser")
 
@@ -93,7 +101,7 @@ def fetch_course_data(url):
 
 if __name__ == "__main__":
     data = pd.DataFrame()
-    for course_id in range(194823, 195000):
+    for course_id in range(189483, 203000):  # 189483 - 203000
         print(f"Fetching course ID: {course_id}")
         data = pd.concat(
             [

@@ -1,8 +1,12 @@
+USE DEP2_staging
+
 CREATE TABLE [dbo].[DimUser]
 (
     UserKey INT IDENTITY(1,1) PRIMARY KEY,
     UserName VARCHAR(70) NOT NULL UNIQUE
 );
+
+ALTER TABLE DimUser ADD CONSTRAINT UQ_DimUser_UserName UNIQUE (UserName);
 
 CREATE TABLE [dbo].[BridgeUserSubgroup]
 (
