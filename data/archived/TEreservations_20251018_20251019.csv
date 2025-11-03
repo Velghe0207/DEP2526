@@ -1,0 +1,5 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+478511;10/21/2025 14:30:00;10/21/2025 16:00:00;10/18/2025 14:54:53;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+478530;10/24/2025 09:00:00;10/24/2025 12:00:00;10/18/2025 14:55:13;yana.cattoir@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859239638503;
+478531;10/20/2025 10:00:00;10/20/2025 14:00:00;10/18/2025 19:00:44;jana.limpens@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.103;;;;859228921518;
+478532;10/21/2025 13:30:00;10/21/2025 17:30:00;10/18/2025 20:47:02;jana.morel@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.025;;;;859229316285;
