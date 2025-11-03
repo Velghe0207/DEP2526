@@ -84,26 +84,26 @@ def create_dim_date(start_date="2025-01-01", end_date="2026-12-31"):
 # Aanmaken van de DimDate DataFrame
 dim_date_df = create_dim_date()
 
-# SQL Server configuratie (pas aan voor je eigen SQL server)
-# server = "127.0.0.1,1500"
-# database = "DEP"
-# username = "SA"
-# password = "Passwordgroep21!"
-# driver = "ODBC Driver 17 for SQL Server"
-
-# Verbinden met de database aan de hand van sqlalchemy
-# engine = create_engine(
-#     f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
-# )
-
-server = "LAPTOP-R1GLLN97"
-database = "loltest2"
+# SQL Server configuratie (lokaal testen - pas aan voor je eigen SQL server)
+server = "127.0.0.1,1500"
+database = "DEP2"
+username = "sa"
+password = "dep2025-G12"
 driver = "ODBC Driver 17 for SQL Server"
 
-# Maak een database-engine
+# Verbinden met de database aan de hand van sqlalchemy
 engine = create_engine(
-    f"mssql+pyodbc://@{server}/{database}?trusted_connection=yes&driver={driver}"
+    f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
 )
+
+# server = "LAPTOP-R1GLLN97"
+# database = "loltest2"
+# driver = "ODBC Driver 17 for SQL Server"
+
+# # Maak een database-engine
+# engine = create_engine(
+#     f"mssql+pyodbc://@{server}/{database}?trusted_connection=yes&driver={driver}"
+# )
 
 # DataFrame naar SQL Server wegschrijven
 dim_date_df.to_sql("DimDate", engine, if_exists="append", index=False)

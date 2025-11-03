@@ -29,25 +29,25 @@ def create_dim_time():
 dim_time_df = create_dim_time()
 
 # SQL Server configuratie (lokaal testen - pas aan voor je eigen SQL server)
-# server = "127.0.0.1,1500"
-# database = "DEP"
-# username = "SA"
-# password = "Passwordgroep21!"
-# driver = "ODBC Driver 17 for SQL Server"
-
-# Verbinden met de database aan de hand van sqlalchemy
-# engine = create_engine(
-#     f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
-# )
-
-server = "LAPTOP-R1GLLN97"
-database = "loltest2"
+server = "127.0.0.1,1500"
+database = "DEP2"
+username = "sa"
+password = "dep2025-G12"
 driver = "ODBC Driver 17 for SQL Server"
 
-# Maak een database-engine
+# Verbinden met de database aan de hand van sqlalchemy
 engine = create_engine(
-    f"mssql+pyodbc://@{server}/{database}?trusted_connection=yes&driver={driver}"
+    f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
 )
+
+# server = "LAPTOP-R1GLLN97"
+# database = "loltest2"
+# driver = "ODBC Driver 17 for SQL Server"
+
+# # Maak een database-engine
+# engine = create_engine(
+#     f"mssql+pyodbc://@{server}/{database}?trusted_connection=yes&driver={driver}"
+# )
 
 # DataFrame naar SQL Server wegschrijven
 dim_time_df.to_sql("DimTime", engine, if_exists="append", index=False)
