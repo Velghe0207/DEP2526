@@ -52,14 +52,16 @@ CREATE TABLE [dbo].[DimProgram]
 (
     ProgramKey [int] NOT NULL PRIMARY KEY,
     ProgramName [varchar](50) NOT NULL,
-    ProgramCode [int] NOT NULL,
 );
 
 CREATE TABLE [dbo].[DimClass]
 (
     ClassKey [int] NOT NULL PRIMARY KEY,
-    ClassName [varchar](50) NOT NULL,
+    ClassName [varchar](150) NOT NULL,
     ClassCode [int] NOT NULL,
+    ClassCredits [int] NOT NULL,
+    ClassSecondChance [bit] NOT NULL,
+    ClassProgramStage [int],
 );
 
 CREATE TABLE [dbo].[FactLecture]
