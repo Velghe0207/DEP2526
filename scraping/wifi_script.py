@@ -19,7 +19,7 @@ def get_token(secret: str, url: str = "https://dep2.simondg.com/auth/login"):
 
 
 def get_wifi_clients(
-    token: str, url: str = "https://dep2.simondg.com/wifi-clients/last-30-minutes"
+    token: str, url: str = "https://dep2.simondg.com/wifi-clients/last-15-minutes"
 ):
     """Function for GET request to WiFi API"""
     headers = {"Authorization": f"Bearer {token}"}
