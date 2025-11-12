@@ -1,0 +1,20 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+315823;08/27/2025 12:30:00;08/27/2025 14:30:00;08/05/2025 08:36:21;mehmet.kose+1@hogent.be;Confirmed;;;;;;;;;Digitaal examen;;Digitaal (laptop/PC);Software (Niet ans);;;EK2_2024-25_188447|EK2_2024-25_180567;869732701712;180567|188447;_te_634395;21899|21683;;;;
+356057;03/13/2026 13:30:00;03/13/2026 18:00:00;08/05/2025 10:32:40;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612950057;;;;;;;
+461731;09/15/2025 08:00:00;09/15/2025 18:00:00;08/05/2025 12:51:13;peggy.deridder+1@hogent.be;Confirmed;;Werken;;;;Technisch beheer;_te_601893;;;;;;;;;;;01.16.100.217;;;;;
+461732;09/16/2025 08:00:00;09/16/2025 18:00:00;08/05/2025 12:51:18;peggy.deridder+1@hogent.be;Confirmed;;Werken;;;;Technisch beheer;_te_601893;;;;;;;;;;;01.16.100.217;;;;;
+461733;09/17/2025 08:00:00;09/17/2025 18:00:00;08/05/2025 12:51:20;peggy.deridder+1@hogent.be;Confirmed;;Werken;;;;Technisch beheer;_te_601893;;;;;;;;;;;01.16.100.217;;;;;
+461734;09/15/2025 08:00:00;09/15/2025 18:00:00;08/05/2025 12:52:59;peggy.deridder+1@hogent.be;Confirmed;;Werken;;;;Technisch beheer;_te_601893;;;;;;;;;;;01.16.110.218|01.16.110.213|01.16.110.212|01.16.110.217|01.16.110.214;;;;;
+461735;09/17/2025 08:00:00;09/17/2025 18:00:00;08/05/2025 12:53:06;peggy.deridder+1@hogent.be;Confirmed;;Werken;;;;Technisch beheer;_te_601893;;;;;;;;;;;01.16.110.218|01.16.110.213|01.16.110.212|01.16.110.217|01.16.110.214;;;;;
+461736;09/16/2025 13:30:00;09/16/2025 18:00:00;08/05/2025 12:53:24;peggy.deridder+1@hogent.be;Confirmed;;Werken;;;;Technisch beheer;_te_601893;;;;;;;;;;;01.16.110.218|01.16.110.213|01.16.110.212|01.16.110.217|01.16.110.214;;;;;
+356267;04/03/2026 08:00:00;04/03/2026 12:30:00;08/05/2025 13:19:13;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612856996;;;;;;;
+356247;04/02/2026 13:30:00;04/02/2026 18:00:00;08/05/2025 13:19:17;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612856996;;;;;;;
+356266;03/26/2026 13:30:00;03/26/2026 18:00:00;08/05/2025 13:58:00;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612856996;;;;;;;
+356242;02/25/2026 13:30:00;02/25/2026 18:00:00;08/05/2025 14:00:26;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612856996;;;;;;;
+356055;02/26/2026 13:30:00;02/26/2026 18:00:00;08/05/2025 14:07:50;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612950057;;;;;;;
+356241;02/18/2026 13:30:00;02/18/2026 18:00:00;08/05/2025 14:11:03;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612856996;;;;;;;
+356054;02/19/2026 13:30:00;02/19/2026 18:00:00;08/05/2025 14:24:06;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612950057;;;;;;;
+461727;08/11/2025 14:30:00;08/11/2025 18:30:00;08/05/2025 21:37:44;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+461728;08/12/2025 13:30:00;08/12/2025 17:30:00;08/05/2025 21:37:50;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+461729;08/18/2025 14:30:00;08/18/2025 18:30:00;08/05/2025 21:38:01;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+461730;08/19/2025 14:30:00;08/19/2025 18:30:00;08/05/2025 21:38:16;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;

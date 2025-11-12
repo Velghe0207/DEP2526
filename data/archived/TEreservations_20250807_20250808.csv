@@ -1,0 +1,13 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+458444;06/18/2026 08:30:00;06/18/2026 12:30:00;08/07/2025 07:48:54;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+458443;06/18/2026 08:30:00;06/18/2026 12:30:00;08/07/2025 07:49:40;Shari.vanwonterghem+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.02.110.034;;;;;
+461959;08/07/2025 09:30:00;08/07/2025 12:00:00;08/07/2025 08:19:37;yasemin.alici@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;;859240562023;
+461960;08/07/2025 13:30:00;08/07/2025 15:00:00;08/07/2025 08:20:24;yasemin.alici@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;;859240562023;
+356054;02/20/2026 13:30:00;02/20/2026 18:00:00;08/07/2025 08:49:47;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612950057;;;;;;;
+356241;02/18/2026 13:30:00;02/18/2026 18:00:00;08/07/2025 09:07:39;david.mannaert+1@hogent.be;Confirmed;Andere opdracht binnen HOGENT;;;;;;;;;;;;;;;869612856996;;;;;;;
+310430;09/01/2025 09:00:00;09/01/2025 11:00:00;08/07/2025 09:09:37;suzanne.naert+1@hogent.be;Confirmed;;;;;;;;;Schriftelijk examen;;;;;;EK2_2024-25_187851;869792852725;187851;01.03.110.008;21609;;;;
+462169;08/13/2025 08:00:00;08/13/2025 12:00:00;08/07/2025 14:55:50;charlotte.debock@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859229023063;
+462170;08/13/2025 13:00:00;08/13/2025 17:00:00;08/07/2025 14:57:29;elien.debrauwer@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859229071866;
+380220;09/05/2025 15:30:00;09/05/2025 17:30:00;08/07/2025 15:52:47;liv.goethals+1@hogent.be;Confirmed;;;;;;;;;;Inhaalexamen Schriftelijk;;;;;;869451173861;182660|182704;01.20.100.152;22161|22157;;;859241100371;
+462232;08/11/2025 08:00:00;08/11/2025 12:00:00;08/07/2025 21:25:10;maya.oppong@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.101;;;;859229202616;
+462233;08/12/2025 08:00:00;08/12/2025 12:00:00;08/07/2025 21:25:45;maya.oppong@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.101;;;;859229202616;

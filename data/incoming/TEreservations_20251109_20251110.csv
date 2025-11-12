@@ -1,0 +1,15 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+480746;11/20/2025 12:30:00;11/20/2025 13:30:00;11/09/2025 00:17:34;mariomihai.state@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859240907886;
+480748;11/27/2025 12:30:00;11/27/2025 13:30:00;11/09/2025 00:19:13;mariomihai.state@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859240907886;
+480747;11/25/2025 12:30:00;11/25/2025 13:30:00;11/09/2025 00:19:24;mariomihai.state@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859240907886;
+480749;11/10/2025 13:30:00;11/10/2025 17:30:00;11/09/2025 11:55:25;casper.dhaese@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.054;;;;859229217568;
+480751;11/17/2025 13:00:00;11/17/2025 16:00:00;11/09/2025 16:41:58;clarisse.poelman@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.040;;;;859251675795;
+480752;11/19/2025 13:00:00;11/19/2025 17:00:00;11/09/2025 16:55:35;jelle.devreeze@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859240448855;
+480753;11/19/2025 09:00:00;11/19/2025 17:00:00;11/09/2025 16:56:42;jelle.devreeze@student.hogent.be;Confirmed;;;;;;;;;;;;;;Podcast uitleenset 4 personen SCH 01;;;;;;;;859240448855;
+480754;11/12/2025 16:00:00;11/12/2025 18:00:00;11/09/2025 17:46:12;cagla.celik@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.063;;;;859251666196;
+480755;11/13/2025 13:00:00;11/13/2025 17:00:00;11/09/2025 17:47:32;cagla.celik@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.063;;;;859251666196;
+480756;11/12/2025 13:30:00;11/12/2025 17:00:00;11/09/2025 18:24:32;ana.thompson@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859239905958;
+480757;11/18/2025 15:00:00;11/18/2025 21:00:00;11/09/2025 18:59:08;chris.vandam@hogent.be;Confirmed;;;;;;;;;;;;;;Videocamera DJI OSMO SCH02;;;;;;;869631664690;;
+480758;11/19/2025 08:00:00;11/19/2025 17:30:00;11/09/2025 18:59:38;chris.vandam@hogent.be;Confirmed;;;;;;;;;;;;;;Videocamera DJI OSMO SCH02;;;;;;;869631664690;;
+480759;11/10/2025 13:30:00;11/10/2025 17:00:00;11/09/2025 19:55:06;astrid.staessens@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859240666804;
+480760;11/10/2025 12:00:00;11/10/2025 16:00:00;11/09/2025 23:58:33;esma.hamja@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;;859240636690;
