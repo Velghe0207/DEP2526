@@ -143,10 +143,15 @@ def main():
     df_wifi = get_wifi_clients(token)
     df_wifi_edu = df_wifi[df_wifi["ssid"] == "eduroam"]
 
-    # Adjust timestamp to +2 hours and round to the nearest minute
+    # Adjust timestamp to Brussels timezone
     df_wifi_edu["timestamp"] = (
-        pd.to_datetime(df_wifi_edu["timestamp"]) + timedelta(hours=2)
-    ).dt.round("T")
+        pd.to_datetime(df_wifi_edu["timestamp"], utc=True)
+        .dt.tz_convert("Europe/Brussels")
+        .dt.tz_localize(None)  # remove timezone info -> naive local datetimes
+    )
+
+    # round timestamp to the closest 5 minutes
+    df_wifi_edu["timestamp"] = df_wifi_edu["timestamp"].dt.round("5min")
 
     # Create DateKey and TimeKey columns
     df_wifi_edu["DateKey"] = df_wifi_edu["timestamp"].dt.strftime("%Y%m%d").astype(int)
