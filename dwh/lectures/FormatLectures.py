@@ -19,7 +19,16 @@ DRIVER = "ODBC Driver 17 for SQL Server"
 # ============================================================
 # 2️⃣ LOAD RAW DATA
 # ============================================================
-df = pd.read_csv(RAW_CSV, sep=';', dtype=str)
+import csv
+
+df = pd.read_csv(
+    "alllectures.csv",
+    sep=";",                # your separator is semicolon
+    quoting=csv.QUOTE_NONE, # disables special treatment of quotes
+    on_bad_lines="skip",    # optionally skip malformed lines
+    engine="python"         # needed when disabling quoting
+    # dtype=str
+)
 
 # Drop irrelevant columns
 drop_cols = [
@@ -34,21 +43,15 @@ df = df.drop(columns=drop_cols)
 df = df.rename(columns={'Id': 'LectureId'})
 
 def parse_datetime_safe(date_str):
-    """Parses date/time automatically, handling both d/m/Y and m/d/Y."""
-    try:
-        return datetime.strptime(date_str, "%d/%m/%Y %H:%M:%S")
-    except ValueError:
-        try:
-            return datetime.strptime(date_str, "%m/%d/%Y %H:%M:%S")
-        except ValueError:
-            return parser.parse(date_str)
+    """Parses date/time."""
+    return datetime.strptime(date_str, "%m/%d/%Y %H:%M:%S")
 
 df['ParsedStart'] = df['Start'].apply(parse_datetime_safe)
 df['ParsedEnd'] = df['End'].apply(parse_datetime_safe)
 
-df['DateKey'] = df['ParsedStart'].dt.strftime("%Y%m%d")
-df['FromTimeKey'] = df['ParsedStart'].dt.strftime("%H%M%S")
-df['UntilTimeKey'] = df['ParsedEnd'].dt.strftime("%H%M%S")
+df['DateKey'] = df['ParsedStart'].dt.strftime("%Y%m%d").astype('Int64')
+df['FromTimeKey'] = df['ParsedStart'].dt.strftime("%H%M%S").astype('Int64')
+df['UntilTimeKey'] = df['ParsedEnd'].dt.strftime("%H%M%S").astype('Int64')
 
 # ============================================================
 # 4️⃣ SPLIT MULTIPLE SUBGROUPS INTO MULTIPLE ROWS
