@@ -3,7 +3,7 @@ import pyodbc
 from pathlib import Path
 
 # ---------------- Config ----------------
-CSV_PATH = Path(r"D:\Documents2\School\25-26-EP1\DEPII\backup\DEP2-2025-2026-groep12\dwh\lectures\FormattedLectures.csv")
+CSV_PATH = Path("./FormattedLectures.csv")
 
 server = "127.0.0.1,1500"
 database = "DEP2"
