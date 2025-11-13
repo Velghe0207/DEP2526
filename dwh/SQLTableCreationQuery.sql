@@ -44,13 +44,7 @@ CREATE TABLE [dbo].[DimRoom]
 CREATE TABLE [dbo].[DimSubgroup]
 (
     SubgroupKey [int] NOT NULL PRIMARY KEY,
-    SubgroupName [varchar](50) NOT NULL,
-    SubgroupCode [int] NOT NULL,
-);
-
-CREATE TABLE [dbo].[DimProgram]
-(
-    ProgramKey [int] NOT NULL PRIMARY KEY,
+    SubgroupCode [varchar](50) NOT NULL,
     ProgramName [varchar](50) NOT NULL,
 );
 
