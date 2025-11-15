@@ -59,7 +59,7 @@ df = df.dropna(subset=["LectureId", "SubgroupKey", "DateKey", "FromTimeKey", "Un
 # 🔍 Remove duplicate LectureId + SubgroupKey combinations
 # ============================================================
 before_count = len(df)
-df = df.drop_duplicates(subset=["LectureId", "SubgroupKey"], keep="first")
+df = df.drop_duplicates(subset=["LectureId", "SubgroupKey"], keep="last")
 after_count = len(df)
 duplicates_removed = before_count - after_count
 
