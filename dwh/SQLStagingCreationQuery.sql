@@ -1,4 +1,4 @@
-USE DEP2_staging
+USE DEP2_staging;
 
 CREATE TABLE [dbo].[DimUser]
 (
