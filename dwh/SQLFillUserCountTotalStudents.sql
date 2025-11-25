@@ -25,7 +25,7 @@ LectureWifi AS (
     INNER JOIN DEP2_staging.dbo.FactWifiConnection fwc
         ON bus.UserKey = fwc.UserKey
         AND fwc.DateKey = lt.DateKey
-        AND CAST(STUFF(STUFF(RIGHT('000000' + CAST(fwc.TimeKey AS VARCHAR(6)), 6), 3, 0, ':'), 6, 0, ':') AS TIME) 
+        AND CAST(STUFF(STUFF(RIGHT('000000' + CAST(fwc.TimeKey AS VARCHAR(6)), 6), 3, 0, ':'), 6, 0, ':') AS TIME)
             BETWEEN DATEADD(MINUTE, 15, lt.FromTime) AND lt.UntilTime
     GROUP BY lt.LectureID, lt.SubgroupKey
 ),
@@ -37,14 +37,30 @@ LectureTotal AS (
     INNER JOIN DEP2_staging.dbo.BridgeUserSubgroup bus
         ON ds.SubgroupKey = bus.SubgroupKey
     GROUP BY ds.SubgroupKey
+),
+CurrentTime AS (
+    SELECT 
+        CAST(SWITCHOFFSET(SYSDATETIMEOFFSET(), '+01:00') AS DATETIME) AS BrusselsDateTime,
+        CONVERT(INT, FORMAT(SWITCHOFFSET(SYSDATETIMEOFFSET(), '+01:00'), 'yyyyMMdd')) AS BrusselsDateKey,
+        CAST(CONVERT(TIME(0), SWITCHOFFSET(SYSDATETIMEOFFSET(), '+01:00')) AS TIME) AS BrusselsTime
 )
 UPDATE fl
 SET 
-    fl.UserCount = ISNULL(lw.UserCount, 0),
+    fl.UserCount = 
+        CASE 
+            -- If lecture has ended (earlier date or current date with UntilTime < now)
+            WHEN (fl.DateKey < ct.BrusselsDateKey)
+                 OR (fl.DateKey = ct.BrusselsDateKey AND lt2.UntilTime <= ct.BrusselsTime)
+                THEN ISNULL(lw.UserCount, 0)
+            ELSE NULL
+        END,
     fl.TotalStudents = ISNULL(lt.TotalStudents, 0)
 FROM DEP2.dbo.FactLecture fl
 LEFT JOIN LectureWifi lw
     ON fl.LectureID = lw.LectureID
     AND fl.SubgroupKey = lw.SubgroupKey
 LEFT JOIN LectureTotal lt
-    ON fl.SubgroupKey = lt.SubgroupKey;
+    ON fl.SubgroupKey = lt.SubgroupKey
+LEFT JOIN LectureTimes lt2
+    ON fl.LectureID = lt2.LectureID
+CROSS JOIN CurrentTime ct;
