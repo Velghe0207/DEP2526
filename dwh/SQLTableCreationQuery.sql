@@ -60,16 +60,23 @@ CREATE TABLE [dbo].[DimClass]
 
 CREATE TABLE [dbo].[FactLecture]
 (
-    DateKey [int] NOT NULL FOREIGN KEY REFERENCES DimDate(DateKey),
-    FromTimeKey [int] NOT NULL FOREIGN KEY REFERENCES DimTime(TimeKey),
-    UntilTimeKey [int] NOT NULL FOREIGN KEY REFERENCES DimTime(TimeKey),
-    ProgramKey [int] NOT NULL FOREIGN KEY REFERENCES DimProgram(ProgramKey),
-    ClassKey [int] NOT NULL FOREIGN KEY REFERENCES DimClass(ClassKey),
-    SubgroupKey [int] NOT NULL FOREIGN KEY REFERENCES DimSubgroup(SubgroupKey),
-    RoomKey [int] NOT NULL FOREIGN KEY REFERENCES DimRoom(RoomKey),
-    ScheduleID [int] NOT NULL,
-    UserCount [int],
-    TotalStudents [int],
-    AttendanceRate AS (CASE WHEN TotalStudents = 0 THEN 0 ELSE CAST(UserCount AS float) / TotalStudents END),
-    CONSTRAINT PK_FactLecture PRIMARY KEY (DateKey, FromTimeKey, UntilTimeKey, ProgramKey, ClassKey, RoomKey, SubgroupKey)
+    LectureID        INT NOT NULL,
+    DateKey          INT NOT NULL FOREIGN KEY REFERENCES DimDate(DateKey),
+    FromTimeKey      INT NOT NULL FOREIGN KEY REFERENCES DimTime(TimeKey),
+    UntilTimeKey     INT NOT NULL FOREIGN KEY REFERENCES DimTime(TimeKey),
+    ClassKey         INT NOT NULL FOREIGN KEY REFERENCES DimClass(ClassKey),
+    SubgroupKey      INT NOT NULL FOREIGN KEY REFERENCES DimSubgroup(SubgroupKey),
+    RoomKey          INT NOT NULL FOREIGN KEY REFERENCES DimRoom(RoomKey),
+    ActivityKey      INT NOT NULL FOREIGN KEY REFERENCES DimActivity(ActivityKey),
+
+    UserCount        INT,
+    TotalStudents    INT,
+
+    AttendanceRate AS 
+        (CASE 
+            WHEN TotalStudents = 0 THEN 0 
+            ELSE CONVERT(float, UserCount) / TotalStudents 
+        END),
+
+    CONSTRAINT PK_FactLecture PRIMARY KEY (LectureID, SubgroupKey)
 );
