@@ -1,4 +1,4 @@
-USE DEP2;
+﻿USE DEP2;
 GO
 
 -- Update UserCount and TotalStudents in FactLecture
@@ -40,9 +40,10 @@ LectureTotal AS (
 ),
 CurrentTime AS (
     SELECT 
-        CAST(SWITCHOFFSET(SYSDATETIMEOFFSET(), '+01:00') AS DATETIME) AS BrusselsDateTime,
-        CONVERT(INT, FORMAT(SWITCHOFFSET(SYSDATETIMEOFFSET(), '+01:00'), 'yyyyMMdd')) AS BrusselsDateKey,
-        CAST(CONVERT(TIME(0), SWITCHOFFSET(SYSDATETIMEOFFSET(), '+01:00')) AS TIME) AS BrusselsTime
+        -- Automatically converts UTC → Brussels local time with DST handling
+        CAST(SYSDATETIMEOFFSET() AT TIME ZONE 'UTC' AT TIME ZONE 'Central European Standard Time' AS DATETIME) AS BrusselsDateTime,
+        CONVERT(INT, FORMAT(SYSDATETIMEOFFSET() AT TIME ZONE 'UTC' AT TIME ZONE 'Central European Standard Time', 'yyyyMMdd')) AS BrusselsDateKey,
+        CAST(CONVERT(TIME(0), SYSDATETIMEOFFSET() AT TIME ZONE 'UTC' AT TIME ZONE 'Central European Standard Time') AS TIME) AS BrusselsTime
 )
 UPDATE fl
 SET 
