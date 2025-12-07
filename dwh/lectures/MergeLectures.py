@@ -1,10 +1,11 @@
 import os
 import pandas as pd
 
+print(os.getcwd())
 # === CONFIGURATION ===
-dir1 = "../../data/archived"
-dir2 = "../../data/incoming"
-output_file = "../../dwh/lectures/AllLectures.csv"
+dir1 = "data/archived"
+dir2 = "data/incoming"
+output_file = "dwh/lectures/AllLectures.csv"
 
 # === FUNCTION TO READ ALL CSV FILES FROM A DIRECTORY ===
 def read_all_csv_from_dir(directory):

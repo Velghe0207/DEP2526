@@ -1,14 +1,16 @@
 import pandas as pd
 import pyodbc
+import os
 from datetime import datetime
 from dateutil import parser
 
+print(os.getcwd())
 # ============================================================
 # 1️⃣ CONFIGURATION
 # ============================================================
-RAW_CSV = "../../dwh/lectures/AllLectures.csv"
-OUTPUT_CSV = "../../dwh/lectures/FormattedLectures.csv"
-MISSING_KEYS_CSV = "../../dwh/lectures/FormattedLectures_missingRoomOrClass.csv"
+RAW_CSV = "dwh/lectures/AllLectures.csv"
+OUTPUT_CSV = "dwh/lectures/FormattedLectures.csv"
+MISSING_KEYS_CSV = "dwh/lectures/FormattedLectures_missingRoomOrClass.csv"
 
 SERVER = "127.0.0.1,1500"
 DATABASE = "DEP2"
@@ -22,7 +24,7 @@ DRIVER = "ODBC Driver 17 for SQL Server"
 import csv
 
 df = pd.read_csv(
-    "alllectures.csv",
+    "dwh/lectures/alllectures.csv",
     sep=";",                # your separator is semicolon
     quoting=csv.QUOTE_NONE, # disables special treatment of quotes
     on_bad_lines="skip",    # optionally skip malformed lines
@@ -52,6 +54,8 @@ df['ParsedEnd'] = df['End'].apply(parse_datetime_safe)
 df['DateKey'] = df['ParsedStart'].dt.strftime("%Y%m%d").astype('Int64')
 df['FromTimeKey'] = df['ParsedStart'].dt.strftime("%H%M%S").astype('Int64')
 df['UntilTimeKey'] = df['ParsedEnd'].dt.strftime("%H%M%S").astype('Int64')
+
+df.loc[df['LectureId'] == "479883", 'OlodPointers'] = '193745'
 
 # ============================================================
 # 4️⃣ SPLIT MULTIPLE SUBGROUPS INTO MULTIPLE ROWS
