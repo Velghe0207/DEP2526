@@ -24,7 +24,7 @@ AND UntilTimeKey = 101500
 AND RoomName = 'GAARB.0.032'
 AND ClassName = 'Mathematics for Machine Learning';
 
--- 3: Subgroep 1B krijgt nooit deze OLOD in onze data
+-- 3: Subgroep 1B krijgt nooit deze OLOD in onze data, maar we hebben de subgroep handmatig ingeladen om toch een getal te krijgen
 USE DEP2
 SELECT LectureID, FromTimeKey, UntilTimeKey, FactLecture.ClassKey, RoomName, SubgroupCode, UserCount, TotalStudents, AttendanceRate, ClassCode
 FROM FactLecture
@@ -36,6 +36,22 @@ AND FromTimeKey = 91500
 AND UntilTimeKey = 123000
 AND RoomName = 'GSCHB.3.037'
 AND ClassName = 'Computer Systems';
+
+USE DEP2
+SELECT LectureID, FromTimeKey, UntilTimeKey, FactLecture.ClassKey, RoomName, SubgroupCode, FactLecture.SubgroupKey, UserCount, TotalStudents, AttendanceRate, ClassCode
+FROM FactLecture
+JOIN DimClass ON FactLecture.ClassKey = DimClass.ClassKey
+JOIN DimRoom ON FactLecture.RoomKey = DimRoom.RoomKey
+JOIN DimSubgroup ON FactLecture.SubgroupKey = DimSubgroup.SubgroupKey
+WHERE ClassName = 'Computer Systems';
+
+USE DEP2_staging
+SELECT FactWifiConnection.UserKey
+FROM FactWifiConnection
+JOIN DimUser ON FactWifiConnection.UserKey = DimUser.UserKey
+JOIN BridgeUserSubgroup ON DimUser.UserKey = BridgeUserSubgroup.UserKey
+WHERE DateKey = 20251124 AND TimeKey BETWEEN 91500 + 1500 AND 123000 AND SubgroupKey = 5829014
+GROUP BY FactWifiConnection.UserKey;
 
 -- 4: 16
 USE DEP2
@@ -50,7 +66,7 @@ AND UntilTimeKey = 123000
 AND RoomName = 'GSCHB.4.029'
 AND ClassName = 'Relational Databases & Datawarehousing';
 
--- 5: Subgroep 1A krijgt nooit deze OLOD in onze data
+-- 5: Subgroep 1A krijgt nooit deze OLOD in onze data, maar we hebben de subgroep handmatig ingeladen om toch een getal te krijgen
 USE DEP2
 SELECT LectureID, FromTimeKey, UntilTimeKey, FactLecture.ClassKey, RoomName, SubgroupCode, UserCount, TotalStudents, AttendanceRate, ClassCode
 FROM FactLecture
@@ -62,6 +78,22 @@ AND FromTimeKey = 133000
 AND UntilTimeKey = 164500
 AND RoomName = 'GSCHB.3.037'
 AND ClassName = 'Computer Systems';
+
+USE DEP2
+SELECT LectureID, FromTimeKey, UntilTimeKey, FactLecture.ClassKey, RoomName, SubgroupCode, FactLecture.SubgroupKey, UserCount, TotalStudents, AttendanceRate, ClassCode
+FROM FactLecture
+JOIN DimClass ON FactLecture.ClassKey = DimClass.ClassKey
+JOIN DimRoom ON FactLecture.RoomKey = DimRoom.RoomKey
+JOIN DimSubgroup ON FactLecture.SubgroupKey = DimSubgroup.SubgroupKey
+WHERE ClassName = 'Computer Systems';
+
+USE DEP2_staging
+SELECT FactWifiConnection.UserKey
+FROM FactWifiConnection
+JOIN DimUser ON FactWifiConnection.UserKey = DimUser.UserKey
+JOIN BridgeUserSubgroup ON DimUser.UserKey = BridgeUserSubgroup.UserKey
+WHERE DateKey = 20251124 AND TimeKey BETWEEN 133000 + 1500 AND 164500 AND SubgroupKey = 5938928
+GROUP BY FactWifiConnection.UserKey;
 
 -- 6: 7
 USE DEP2
@@ -314,7 +346,7 @@ AND UntilTimeKey = 101500
 AND RoomName = 'GAARB.0.032'
 AND ClassName = 'Mathematics for Machine Learning';
 
--- 21: Subgroep 1B krijgt nooit deze OLOD in onze data
+-- 21: Subgroep 1B krijgt nooit deze OLOD in onze data, maar we hebben de subgroep handmatig ingeladen om toch een getal te krijgen
 USE DEP2
 SELECT LectureID, FromTimeKey, UntilTimeKey, FactLecture.ClassKey, RoomName, SubgroupCode, UserCount, TotalStudents, AttendanceRate, ClassCode
 FROM FactLecture
@@ -335,6 +367,14 @@ JOIN DimRoom ON FactLecture.RoomKey = DimRoom.RoomKey
 JOIN DimSubgroup ON FactLecture.SubgroupKey = DimSubgroup.SubgroupKey
 WHERE ClassName = 'Computer Systems';
 
+USE DEP2_staging
+SELECT FactWifiConnection.UserKey
+FROM FactWifiConnection
+JOIN DimUser ON FactWifiConnection.UserKey = DimUser.UserKey
+JOIN BridgeUserSubgroup ON DimUser.UserKey = BridgeUserSubgroup.UserKey
+WHERE DateKey = 20251201 AND TimeKey BETWEEN 91500 + 1500 AND 123000 AND SubgroupKey = 5829014
+GROUP BY FactWifiConnection.UserKey;
+
 -- 22: 16
 USE DEP2
 SELECT LectureID, FromTimeKey, UntilTimeKey, FactLecture.ClassKey, RoomName, SubgroupCode, UserCount, TotalStudents, AttendanceRate, ClassCode
@@ -348,7 +388,7 @@ AND UntilTimeKey = 123000
 AND RoomName = 'GSCHB.4.029'
 AND ClassName = 'Relational Databases & Datawarehousing';
 
--- 23: Subgroep 1A krijgt nooit deze OLOD in onze data
+-- 23: Subgroep 1A krijgt nooit deze OLOD in onze data, maar we hebben de subgroep handmatig ingeladen om toch een getal te krijgen
 USE DEP2
 SELECT LectureID, FromTimeKey, UntilTimeKey, FactLecture.ClassKey, RoomName, SubgroupCode, UserCount, TotalStudents, AttendanceRate, ClassCode
 FROM FactLecture
@@ -368,6 +408,14 @@ JOIN DimClass ON FactLecture.ClassKey = DimClass.ClassKey
 JOIN DimRoom ON FactLecture.RoomKey = DimRoom.RoomKey
 JOIN DimSubgroup ON FactLecture.SubgroupKey = DimSubgroup.SubgroupKey
 WHERE ClassName = 'Computer Systems';
+
+USE DEP2_staging
+SELECT FactWifiConnection.UserKey
+FROM FactWifiConnection
+JOIN DimUser ON FactWifiConnection.UserKey = DimUser.UserKey
+JOIN BridgeUserSubgroup ON DimUser.UserKey = BridgeUserSubgroup.UserKey
+WHERE DateKey = 20251201 AND TimeKey BETWEEN 133000 + 1500 AND 164500 AND SubgroupKey = 5938928
+GROUP BY FactWifiConnection.UserKey;
 
 -- 24: 14, Subgroep PBA-VG-LAM/VT/VG/2 krijgt nooit deze OLOD in onze data, dus dit getal kijkt enkel naar de andere 3 subgroepen
 USE DEP2
