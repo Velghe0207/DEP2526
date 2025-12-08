@@ -1,4 +1,4 @@
--- 1: 9
+-- 1: 5
 USE DEP2
 SELECT LectureID, FromTimeKey, UntilTimeKey, FactLecture.ClassKey, RoomName, SubgroupCode, UserCount, TotalStudents, AttendanceRate, ClassCode
 FROM FactLecture
@@ -8,7 +8,7 @@ JOIN DimSubgroup ON FactLecture.SubgroupKey = DimSubgroup.SubgroupKey
 WHERE DateKey = 20251124
 AND FromTimeKey = 81500
 AND UntilTimeKey = 101500
-AND RoomName = 'GSCHB.1.029'
+AND RoomName = 'GSCHB.4.029'
 AND ClassName = 'Relational Databases & Datawarehousing';
 
 -- 2: GAARB = Aalst, geen data
