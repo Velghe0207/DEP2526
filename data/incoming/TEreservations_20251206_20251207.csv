@@ -1,0 +1,13 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+484420;02/19/2026 14:30:00;02/19/2026 16:30:00;12/06/2025 06:49:13;mariomihai.state@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.025;;;;859240907886;
+484421;02/26/2026 14:30:00;02/26/2026 16:30:00;12/06/2025 06:49:40;mariomihai.state@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.025;;;;859240907886;
+484422;03/05/2026 14:30:00;03/05/2026 16:30:00;12/06/2025 06:49:54;mariomihai.state@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.025;;;;859240907886;
+481286;12/08/2025 15:00:00;12/08/2025 19:00:00;12/06/2025 10:49:27;neeka.claeys@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.102;;;;859240555959;
+484423;12/12/2025 11:00:00;12/12/2025 14:30:00;12/06/2025 13:35:42;assia.boukioudi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;;859240731771;
+482560;01/05/2026 09:00:00;01/05/2026 11:00:00;12/06/2025 16:26:27;els.verstraete@hogent.be;Confirmed;;;;;;;;;Schriftelijk examen;;;ans: op papier;;;5807343|5807418|5814825|5807268;869672008610|869612823250;193070;26.01.100.014;23237;;;;869632869211|_te_654717
+476980;01/21/2026 08:00:00;01/21/2026 13:00:00;12/06/2025 16:30:05;els.verstraete@hogent.be;Confirmed;;;;;;;;;Mondeling examen;;;;;;5807574|5807499|5807649;869671164609|869682500774|869671656275|869671222809;193076;26.01.110.158;23238;;;;_te_654716
+476979;01/21/2026 13:00:00;01/21/2026 18:00:00;12/06/2025 16:30:28;els.verstraete@hogent.be;Confirmed;;;;;;;;;Mondeling examen;;;;;;5807574|5807499|5807649;869671164609|869682500774|869671656275|869671222809;193076;26.01.110.158;23238;;;;869682770253
+484424;12/09/2025 09:00:00;12/09/2025 12:30:00;12/06/2025 20:25:19;sedric.dezutter@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.114;;;;859240878180;
+484425;12/08/2025 09:00:00;12/08/2025 12:30:00;12/06/2025 20:47:45;ana.thompson@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.040;;;;859239905958;
+484426;12/09/2025 13:30:00;12/09/2025 17:00:00;12/06/2025 20:49:56;ana.thompson@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.114;;;;859239905958;
+484427;12/09/2025 13:30:00;12/09/2025 17:30:00;12/06/2025 21:09:51;rabia.uyar2@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859251357921;
