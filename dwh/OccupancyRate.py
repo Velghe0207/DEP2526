@@ -7,7 +7,7 @@ password = "dep2025-G12"
 driver = "ODBC Driver 18 for SQL Server"
 
 engine = sa.create_engine(
-    f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
+    f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}&TrustServerCertificate=yes"
 )
 
 # Read SQL file

@@ -1,13 +1,13 @@
 import sqlalchemy as sa
 
-server = "127.0.0.1"  # adjust port if needed
+server = "127.0.0.1"
 database = "DEP2"
 username = "sa"
 password = "dep2025-G12"
-driver = "ODBC Driver 18 for SQL Server"  # ensure installed
+driver = "ODBC Driver 18 for SQL Server"
 
 engine = sa.create_engine(
-    f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
+    f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}&TrustServerCertificate=yes"
 )
 
 # Read SQL file
