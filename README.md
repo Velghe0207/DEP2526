@@ -12,7 +12,7 @@ Om dit project op te starten, verbind eerst met SQL Server via de DWH-tunnel en 
 
 ### Nieuwe data
 
-Sommige scripts in de `/scraping` map maken gebruik van de API waarvoor een geheim token nodig is. Plaats dit token in een .env-bestand in dezelfde map (`/scraping`) met de volgende regel:
+Sommige scripts in de `/scraping` map maken gebruik van de API waarvoor een geheim token nodig is. Plaats dit token in een .env-bestand met de volgende regel:
 
 ```ini
 SECRET=token_hier
@@ -59,7 +59,7 @@ Hier wordt alle data opgeslagen.
 
 Hier in zitten alle scripts en bestanden om via .csv bestanden de datawarehouse en de database tabellen te creëren.
 
-### Python:
+### Python
 
 - fill_dimroom.py: Verbindt met de database en vult tabel `dimRoom`
 - fill_reservations.py: Verbindt met de database en vult tabel `FactLecture`
@@ -68,7 +68,7 @@ Hier in zitten alle scripts en bestanden om via .csv bestanden de datawarehouse 
 - script_dimtime.py: Verbindt met de database en vult tabel `dimTime`
 - script_staging_dimuser_bridgeusb.ipynb: Verbindt met de staging database en vult tabel `BridgeUserSubgroup`
 
-### SQL:
+### SQL
 
 - SQLCreateDimActivity.sql: Maakt tabel `dimActivity` aan en vult deze.
 - SQLFillOccupancyRate.sql: Updates tabel 'FactLecture' kolom OccupancyRate gebaseerd op lokaal capaciteit.
@@ -88,7 +88,7 @@ Hier in zitten alle scripts en bestanden om via .csv bestanden de datawarehouse 
 
 ## Staging database
 
-![DEP2 Staging database](dwh\sterschemaDEP2_staging.png "DEP2 Staging Database")
+![DEP2 Staging database](dwh/sterschemaDEP2_staging.png "DEP2 Staging Database")
 
 ## Machine Learning
 
@@ -100,12 +100,12 @@ Hier in zitten alle scripts en bestanden om via .csv bestanden de datawarehouse 
 
 ## Scraping
 
-- class_processing.ipynb: Kuist en formateert gescrapte OLODS en vult database tabel `DimClass`.
-- class_scraping.py: Scrapt alle OLODS van hogent.
+- class_processing.ipynb: Kuist en formateert de OLODS die gescraped zijn en vult database tabel `DimClass`.
+- class_scraping.py: Scrape alle OLODS van hogent.
 - lokalen.ipynb: Kuist en formateert gekregen bestand van lokalen.
 - reservations_clean_merge.ipynb:Kuist en formateert reservatie bestanden.
-- students.ipynb: Haalt alle studenten op via API van [dep2.simondg.com](dep2.simondg.com) via gescrapte subgroepen in reservatie data.
+- students.ipynb: Haalt alle studenten op via API van [dep2.simondg.com](dep2.simondg.com) en via subgroepen die gescraped zijn in reservatie data.
 - unique_classgroups_schedule.ipynb: Haalt alle unieke klasgroepen op uit reservatie data.
 - week1_4_wifi.ipynb: Zet gekregen wifidata van de eerste 4 weken om tot bruikbare data.
-- wifi_script.py: Scrapte wifi van de laaste 15 minutes via API van [dep2.simondg.com](dep2.simondg.com)
+- wifi_script.py: Scrape wifi van de laaste 15 minutes via API van [dep2.simondg.com](dep2.simondg.com)
 - wifi_script2_backup.py: Backup scraper van wifi data in geval van VM problemen.
