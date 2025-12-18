@@ -4,6 +4,35 @@ Groepsleden: Emile Velghe, Korneel Grumieaux, Mikail In, Semih Malcikan en Yoran
 
 Dit project gaat over geanonimiseerde wifi data te scrapen van wifi routers en hiermee de totaal aanwezigheid en bezetting van een lokaal op een les per les basis te bepalen.
 
+## Project opstarten
+
+### DWH aanmaken - vullen
+
+Om dit project op te starten, verbind eerst met SQL Server via de DWH-tunnel en maak de twee databases aan op de VM: DEP2 en DEP2_staging. Voer de creation query.sql (SQLStaging- en SQLTableCreationQuery.sql) bestanden uit op de DWH. Deze bevinden zich in `/dwh`. Om deze tabellen op te vullen gebruik de .py en .ipynb bestanden in dezelfde folder. Deze zijn vernoemd naar de tabel(len) die ze opvullen bv. fill_dimRoom zal DEP2 dimRoom opvullen, script_DimTime zal DEP2 DimTime opvullen.
+
+### Nieuwe data
+
+Sommige scripts in de `/scraping` map maken gebruik van de API waarvoor een geheim token nodig is. Plaats dit token in een .env-bestand in dezelfde map (`/scraping`) met de volgende regel:
+
+```ini
+SECRET=token_hier
+```
+
+- Nieuwe reservation data in .csv formaat plaatsen in folder: `/data/incoming` en scripts uitvoeren in `/dwh/lectures`
+- Nieuwe OLODs - scrapet ibamaflex: `/scraping/class_scraping.py` - `/scraping/class_processing.ipynb`
+- Nieuwe studenten - overloopt reservatie data van `/scraping/unique_classgroups_schedule.ipynb` en haalt studenten op via [dep2.simondg.com](dep2.simondg.com) - `/scraping/students.ipynb`
+- Nieuwe wifi data: `scraping/wifi_script.py`
+
+### Cronjobs
+
+Er zijn 3 cronjobs die om de 15 minuten worden uitgevoerd:
+
+```bash
+*/15 * * * * /usr/bin/python3 /home/vicuser/DEP2-2025-2026-groep12/scraping/wifi_script.py
+*/15 * * * * cd /home/vicuser/DEP2-2025-2026-groep12 && /usr/bin/python3 /home/vicuser/DEP2-2025-2026-groep12/dwh/UserCountTotalStudents.py
+*/15 * * * * cd /home/vicuser/DEP2-2025-2026-groep12 && /usr/bin/python3 /home/vicuser/DEP2-2025-2026-groep12/dwh/OccupancyRate.py
+```
+
 ## Analysis
 
 Hier zitten enkele bestanden die handig kunnen zijn bij het controleren van waarden.
@@ -33,7 +62,7 @@ Hier in zitten alle scripts en bestanden om via .csv bestanden de datawarehouse 
 ### Python:
 
 - fill_dimroom.py: Verbindt met de database en vult tabel `dimRoom`
-- fill_reservations.py: Verbindt met de database en vult tabel `FactSchedule`
+- fill_reservations.py: Verbindt met de database en vult tabel `FactLecture`
 - script_dimdate.py: Verbindt met de database en vult tabel `dimDate`
 - script_dimsubgroep.py: Verbindt met de database en vult tabel `dimSubgroep`
 - script_dimtime.py: Verbindt met de database en vult tabel `dimTime`
@@ -42,14 +71,14 @@ Hier in zitten alle scripts en bestanden om via .csv bestanden de datawarehouse 
 ### SQL:
 
 - SQLCreateDimActivity.sql: Maakt tabel `dimActivity` aan en vult deze.
-- SQLFillOccupancyRate.sql: Updates tabel 'FactSchedule' kolom OccupancyRate gebaseerd op lokaal capaciteit.
-- SQLFillUserCountTotalStudents.sql: Vult tabel `FactSchedule` 'UserCount' en 'TotalStudents' via de staging database
+- SQLFillOccupancyRate.sql: Updates tabel 'FactLecture' kolom OccupancyRate gebaseerd op lokaal capaciteit.
+- SQLFillUserCountTotalStudents.sql: Vult tabel `FactLecture` 'UserCount' en 'TotalStudents' via de staging database
 - SQLStagingCreationQuery.sql: Maakt tabellen `dimUser`,`BridgeUserSubgroup` en `FactWifiConnection` aan in staging database.
 - SteekProevenWeek10_11.sql: Script voor steekproeven van week 10 en 11 op te halen rechtstreeks uit database.
 
 `lectures`: Alle scripts die te maken hebben met database tabel FactLecture.
 
-- fillFactLectures.py: Verbindt met de database en vult tabel `FactSchedule`
+- fillFactLectures.py: Verbindt met de database en vult tabel `FactLecture`
 - FormatLectures.py: Formateert lecture bestanden om deze te kunnen inlanden op de database.
 - MergeLectures.py: Voegt alle lecture bestanden samen tot één bestand.
 
