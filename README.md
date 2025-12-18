@@ -20,7 +20,7 @@ SECRET=token_hier
 
 - Nieuwe reservation data in .csv formaat plaatsen in folder: `/data/incoming` en scripts uitvoeren in `/dwh/lectures`
 - Nieuwe OLODs - scrapet ibamaflex: `/scraping/class_scraping.py` - `/scraping/class_processing.ipynb`
-- Nieuwe studenten - overloopt reservatie data van `/scraping/unique_classgroups_schedule.ipynb` en haalt studenten op via [dep2.simondg.com](dep2.simondg.com) - `/scraping/students.ipynb`
+- Nieuwe studenten - overloopt reservatie data van `/scraping/unique_classgroups_schedule.ipynb` en haalt studenten op via [dep2.simondg.com](https://dep2.simondg.com/redoc) - `/scraping/students.ipynb`
 - Nieuwe wifi data: `scraping/wifi_script.py`
 
 ### Cronjobs
@@ -47,7 +47,7 @@ Hier wordt alle data opgeslagen.
 
 `archived`: Alle oude reservatie data wordt hierin bewaard
 
-`classgroups`: Alle subgroepen opgehaald uit reservatie data via API van [dep2.simondg.com](dep2.simondg.com)
+`classgroups`: Alle subgroepen opgehaald uit reservatie data via API van [dep2.simondg.com](https://dep2.simondg.com/redoc)
 
 `cleaned`: Hier zit alle geformatte en opgeschonde data in
 
@@ -104,8 +104,8 @@ Hier in zitten alle scripts en bestanden om via .csv bestanden de datawarehouse 
 - class_scraping.py: Scrape alle OLODS van hogent.
 - lokalen.ipynb: Kuist en formateert gekregen bestand van lokalen.
 - reservations_clean_merge.ipynb:Kuist en formateert reservatie bestanden.
-- students.ipynb: Haalt alle studenten op via API van [dep2.simondg.com](dep2.simondg.com) en via subgroepen die gescraped zijn in reservatie data.
+- students.ipynb: Haalt alle studenten op via API van [dep2.simondg.com](https://dep2.simondg.com/redoc) en via subgroepen die gescraped zijn in reservatie data.
 - unique_classgroups_schedule.ipynb: Haalt alle unieke klasgroepen op uit reservatie data.
 - week1_4_wifi.ipynb: Zet gekregen wifidata van de eerste 4 weken om tot bruikbare data.
-- wifi_script.py: Scrape wifi van de laaste 15 minutes via API van [dep2.simondg.com](dep2.simondg.com)
+- wifi_script.py: Scrape wifi van de laaste 15 minutes via API van [dep2.simondg.com](https://dep2.simondg.com/redoc)
 - wifi_script2_backup.py: Backup scraper van wifi data in geval van VM problemen.
