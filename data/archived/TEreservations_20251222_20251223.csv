@@ -1,0 +1,14 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+483706;12/22/2025 10:30:00;12/22/2025 14:30:00;12/22/2025 08:18:53;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486363;12/22/2025 11:00:00;12/22/2025 15:00:00;12/22/2025 10:56:43;evaluna.vanlandschoot@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;Room_Parent_Collaborative corner;;;;859251612242;
+486347;12/22/2025 10:30:00;12/22/2025 14:30:00;12/22/2025 11:40:19;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486364;12/23/2025 15:00:00;12/23/2025 16:30:00;12/22/2025 11:52:08;jens.vandewynckel@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.103;;;;859218353063;
+486210;01/30/2026 09:00:00;01/30/2026 11:00:00;12/22/2025 11:54:38;Patricia.Joliens+1@hogent.be;Confirmed;;;;;;;;;;Inhaalexamen Schriftelijk;;;;;;869432101338|869732375447;193632;01.02.100.064;23504|22909|22897;;;859142758943|859251891522;
+486286;12/22/2025 12:30:00;12/22/2025 16:30:00;12/22/2025 11:59:31;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486366;12/22/2025 12:00:00;12/22/2025 16:00:00;12/22/2025 12:12:33;isra.dhaouadi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859251623760;
+486365;12/23/2025 10:00:00;12/23/2025 11:00:00;12/22/2025 12:15:13;isra.dhaouadi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.104;;;;859251623760;
+486367;12/22/2025 12:00:00;12/22/2025 16:00:00;12/22/2025 12:16:53;matthias.boeykens@hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.104;;;;_te_634269;
+483712;12/22/2025 15:00:00;12/22/2025 19:00:00;12/22/2025 13:12:10;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486368;04/20/2026 08:30:00;04/20/2026 13:00:00;12/22/2025 22:08:17;marijke.vandepitte+1@hogent.be;Confirmed;;;;UGent;_te_599067;;;;;;;;;;;;;01.03.110.009;;;;;
+485251;12/23/2025 09:00:00;12/23/2025 13:00:00;12/22/2025 22:53:34;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486369;12/23/2025 12:30:00;12/23/2025 16:30:00;12/22/2025 22:53:47;anissa.elaidi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.104;;;;859251272843;

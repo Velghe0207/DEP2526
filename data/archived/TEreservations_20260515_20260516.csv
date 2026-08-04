@@ -1,0 +1,14 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+592706;05/18/2026 13:30:00;05/18/2026 17:30:00;05/15/2026 00:06:05;tamkine.rahimy@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859251377523;
+592707;05/19/2026 13:30:00;05/19/2026 17:30:00;05/15/2026 00:06:27;tamkine.rahimy@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859251377523;
+583864;05/18/2026 09:30:00;05/18/2026 11:30:00;05/15/2026 00:21:18;mashal.momand@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.054;;;;859241073190;
+592708;06/11/2026 10:00:00;06/11/2026 14:00:00;05/15/2026 09:06:40;lenie.vertenten@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.058;;;;859229531305;
+592709;06/11/2026 14:00:00;06/11/2026 17:00:00;05/15/2026 09:07:31;karo.dehertogh@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.058;;;;859239632540;
+583756;05/19/2026 08:30:00;05/19/2026 12:30:00;05/15/2026 13:59:01;ysra.slama@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.058;;;;859240855245;
+592841;06/01/2026 11:30:00;06/01/2026 15:30:00;05/15/2026 21:34:50;cherine.uwase@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859251279008;
+592842;06/03/2026 08:00:00;06/03/2026 12:00:00;05/15/2026 21:35:33;cherine.uwase@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859251279008;
+592843;05/28/2026 13:30:00;05/28/2026 17:30:00;05/15/2026 21:37:30;cherine.uwase@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859251279008;
+592839;05/21/2026 13:00:00;05/21/2026 17:00:00;05/15/2026 21:38:13;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+592840;06/08/2026 13:00:00;06/08/2026 17:00:00;05/15/2026 21:38:57;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+592844;05/26/2026 09:00:00;05/26/2026 12:00:00;05/15/2026 21:39:55;cherine.uwase@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859251279008;
+592845;06/09/2026 09:00:00;06/09/2026 12:00:00;05/15/2026 21:40:50;cherine.uwase@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859251279008;

@@ -1,0 +1,5 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+486359;01/06/2026 14:00:00;01/06/2026 16:00:00;12/21/2025 14:31:49;marie.breynaert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859251744810;
+486360;12/22/2025 14:00:00;12/22/2025 17:00:00;12/21/2025 17:04:54;chaima.michmich@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;Room_parent_podcast corner;;;;859240547269;
+486361;01/05/2026 13:00:00;01/05/2026 17:00:00;12/21/2025 19:46:50;chaima.michmich@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.054;;;;859240547269;
+486362;01/06/2026 13:30:00;01/06/2026 17:30:00;12/21/2025 19:47:45;chaima.michmich@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.043;;;;859240547269;

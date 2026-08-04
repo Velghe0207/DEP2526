@@ -5,18 +5,15 @@ from pathlib import Path
 # ---------------- Config ----------------
 CSV_PATH = Path(r"dwh\lectures\FormattedLectures.csv")
 
-server = "127.0.0.1,1500"
+server = "localhost\\MSSQLSERVER2019"
 database = "DEP2"
-username = "sa"
-password = "dep2025-G12"
 driver = "ODBC Driver 17 for SQL Server"
 
 conn_str = (
     f"DRIVER={{{driver}}};"
     f"SERVER={server};"
     f"DATABASE={database};"
-    f"UID={username};"
-    f"PWD={password};"
+    "Trusted_Connection=Yes;"
     "TrustServerCertificate=Yes;"
 )
 

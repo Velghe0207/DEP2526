@@ -1,0 +1,4 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+488770;01/19/2026 08:00:00;01/19/2026 17:00:00;01/17/2026 10:53:57;jelle.devreeze@student.hogent.be;Confirmed;;;;;;;;;;;;;;Laptop Dell SCH 01;;;;;;;;859240448855;
+488771;01/19/2026 09:30:00;01/19/2026 12:00:00;01/17/2026 16:09:33;kato.goudezeune@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.025;;;;859251443605;
+488775;01/19/2026 09:00:00;01/19/2026 13:00:00;01/17/2026 20:24:30;arthur.dellaert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859251547877;

@@ -69,7 +69,6 @@ def create_dim_date(start_date="2025-01-01", end_date="2026-12-31"):
             "NameQuarter": date_range.quarter.map({1: "Q1", 2: "Q2", 3: "Q3", 4: "Q4"}),
             "NumberQuarter": date_range.quarter,
             "NumberSemester": date_range.month.map({1: 1, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 3, 8: 3, 9: 1, 10: 1, 11: 1, 12: 1}),
-            "Day": date_range.day,
             "Month": date_range.month,
             "Year": date_range.year,
             "Weekday": date_range.weekday + 1,  # Maandag = 1, Zondag = 7
@@ -84,16 +83,14 @@ def create_dim_date(start_date="2025-01-01", end_date="2026-12-31"):
 # Aanmaken van de DimDate DataFrame
 dim_date_df = create_dim_date()
 
-# SQL Server configuratie (lokaal testen - pas aan voor je eigen SQL server)
-server = "127.0.0.1,1500"
+# SQL Server configuratie (lokale instantie, Windows-authenticatie)
+server = "localhost\\MSSQLSERVER2019"
 database = "DEP2"
-username = "sa"
-password = "dep2025-G12"
 driver = "ODBC Driver 17 for SQL Server"
 
 # Verbinden met de database aan de hand van sqlalchemy
 engine = create_engine(
-    f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
+    f"mssql+pyodbc://@{server}/{database}?driver={driver}&trusted_connection=yes&TrustServerCertificate=yes"
 )
 
 # server = "LAPTOP-R1GLLN97"

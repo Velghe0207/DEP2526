@@ -1,0 +1,17 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+486385;12/30/2025 08:00:00;12/30/2025 12:00:00;12/30/2025 07:01:28;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486164;12/30/2025 09:00:00;12/30/2025 13:00:00;12/30/2025 09:01:03;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486425;12/31/2025 09:00:00;12/31/2025 13:00:00;12/30/2025 09:01:23;anissa.elaidi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.101;;;;859251272843;
+486426;01/05/2026 09:30:00;01/05/2026 13:30:00;12/30/2025 09:23:46;ameer.safi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.062;;;;859240569497;
+486427;12/30/2025 13:00:00;12/30/2025 17:00:00;12/30/2025 10:42:27;amani.mehennaoui@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;Room_parent_podcast corner;;;;859251931635;
+486424;12/30/2025 12:00:00;12/30/2025 16:00:00;12/30/2025 11:53:35;nissa.lumuangaeto@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.102;;;;859240899907;
+486428;01/05/2026 09:00:00;01/05/2026 13:00:00;12/30/2025 19:26:12;mauro.maratta@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.040;;;;859239656990;
+486429;01/06/2026 12:00:00;01/06/2026 16:00:00;12/30/2025 19:27:39;mauro.maratta@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.057;;;;859239656990;
+486376;01/06/2026 10:30:00;01/06/2026 14:30:00;12/30/2025 20:22:38;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486430;01/07/2026 13:00:00;01/07/2026 17:00:00;12/30/2025 20:23:23;melanie.szafiro@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859240682160;
+486377;01/09/2026 11:00:00;01/09/2026 15:00:00;12/30/2025 20:23:40;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+486431;01/08/2026 13:00:00;01/08/2026 17:00:00;12/30/2025 20:24:06;melanie.szafiro@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.063;;;;859240682160;
+486432;12/31/2025 10:00:00;12/31/2025 14:00:00;12/30/2025 21:43:35;efecihat.gunay@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859240620829;
+486433;12/31/2025 14:00:00;12/31/2025 18:00:00;12/30/2025 21:48:00;meldanur.kahya@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859240594658;
+486434;01/06/2026 10:30:00;01/06/2026 13:00:00;12/30/2025 23:07:28;oumaima.ezzine@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.062;;;;859251671755;
+486435;01/06/2026 13:00:00;01/06/2026 17:00:00;12/30/2025 23:08:01;rihanna.apirdy@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.062;;;;859251664176;

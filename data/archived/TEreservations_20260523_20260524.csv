@@ -1,0 +1,4 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+605381;05/27/2026 09:00:00;05/27/2026 13:00:00;05/23/2026 09:08:41;fyllis.deschuyter@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.054;;;;859239894036;
+605382;05/27/2026 13:30:00;05/27/2026 17:00:00;05/23/2026 09:32:08;maite.pinnewaert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.054;;;;859229233433;
+605383;05/26/2026 09:00:00;05/26/2026 13:00:00;05/23/2026 10:06:56;chifa.bensiali@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.101;;;;859229412578;

@@ -12,10 +12,8 @@ RAW_CSV = "dwh/lectures/AllLectures.csv"
 OUTPUT_CSV = "dwh/lectures/FormattedLectures.csv"
 MISSING_KEYS_CSV = "dwh/lectures/FormattedLectures_missingRoomOrClass.csv"
 
-SERVER = "127.0.0.1,1500"
+SERVER = "localhost\\MSSQLSERVER2019"
 DATABASE = "DEP2"
-USERNAME = "sa"
-PASSWORD = "dep2025-G12"
 DRIVER = "ODBC Driver 17 for SQL Server"
 
 # ============================================================
@@ -74,7 +72,7 @@ df = df.drop(columns=['Classgroups'])
 # ============================================================
 # 5️⃣ CONNECT TO DATABASE TO GET FOREIGN KEYS
 # ============================================================
-conn_str = f"DRIVER={{{DRIVER}}};SERVER={SERVER};DATABASE={DATABASE};UID={USERNAME};PWD={PASSWORD}"
+conn_str = f"DRIVER={{{DRIVER}}};SERVER={SERVER};DATABASE={DATABASE};Trusted_Connection=Yes;TrustServerCertificate=Yes"
 conn = pyodbc.connect(conn_str)
 
 class_map = pd.read_sql("SELECT ClassCode, ClassKey FROM dbo.DimClass", conn)
@@ -82,11 +80,20 @@ room_map = pd.read_sql("SELECT Code AS RoomCode, RoomKey FROM dbo.DimRoom", conn
 activity_map = pd.read_sql("SELECT ActivityKey, SourceColumn, SourceValue FROM dbo.DimActivity", conn)
 conn.close()
 
-# Merge ClassKey from OlodPointers
+# Merge ClassKey from OlodPointers (take the first code when a lecture lists
+# several pipe-separated OLODs; ClassKey isn't part of the FactLecture PK
+# anyway, so any duplicate LectureId+SubgroupKey rows this could create are
+# collapsed later in fillFactLectures.py).
+df['OlodPointers'] = pd.to_numeric(
+    df['OlodPointers'].astype(str).str.split('|').str[0], errors='coerce'
+).astype('Int64')
+class_map['ClassCode'] = class_map['ClassCode'].astype('Int64')
 df = df.merge(class_map, how='left', left_on='OlodPointers', right_on='ClassCode')
 df = df.drop(columns=['ClassCode'])
 
-# Merge RoomKey from Rooms
+# Merge RoomKey from Rooms (take the first room when a lecture lists several
+# pipe-separated rooms, same reasoning as OlodPointers above).
+df['Rooms'] = df['Rooms'].astype(str).str.split('|').str[0]
 df = df.merge(room_map, how='left', left_on='Rooms', right_on='RoomCode')
 df = df.drop(columns=['RoomCode'])
 

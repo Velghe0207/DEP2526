@@ -28,16 +28,14 @@ def create_dim_time():
 # Functie create_dim_time() uitvoeren
 dim_time_df = create_dim_time()
 
-# SQL Server configuratie (lokaal testen - pas aan voor je eigen SQL server)
-server = "127.0.0.1,1500"
+# SQL Server configuratie (lokale instantie, Windows-authenticatie)
+server = "localhost\\MSSQLSERVER2019"
 database = "DEP2"
-username = "sa"
-password = "dep2025-G12"
 driver = "ODBC Driver 17 for SQL Server"
 
 # Verbinden met de database aan de hand van sqlalchemy
 engine = create_engine(
-    f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}"
+    f"mssql+pyodbc://@{server}/{database}?driver={driver}&trusted_connection=yes&TrustServerCertificate=yes"
 )
 
 # server = "LAPTOP-R1GLLN97"

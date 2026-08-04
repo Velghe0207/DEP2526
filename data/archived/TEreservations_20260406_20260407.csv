@@ -1,0 +1,7 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+557064;04/07/2026 14:00:00;04/07/2026 18:00:00;04/06/2026 10:37:33;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+557065;04/08/2026 14:00:00;04/08/2026 18:00:00;04/06/2026 10:38:09;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+559610;04/08/2026 13:30:00;04/08/2026 17:30:00;04/06/2026 15:27:44;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+559611;04/08/2026 10:00:00;04/08/2026 14:00:00;04/06/2026 17:18:31;annais.deruyver@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;;859218198671;
+559612;04/08/2026 14:00:00;04/08/2026 18:00:00;04/06/2026 17:57:33;annabelle.perezperez@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;;859229161994;
+559613;04/07/2026 09:00:00;04/07/2026 13:00:00;04/06/2026 20:48:13;sarah.bader@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.057;;;;859239951125;

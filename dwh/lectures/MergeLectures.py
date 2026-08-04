@@ -3,8 +3,10 @@ import pandas as pd
 
 print(os.getcwd())
 # === CONFIGURATION ===
+# Full-year re-export from TimeEdit (semester 1 + semester 2). data/archived
+# now holds the complete run (2025-07-07 through 2026-08-02); data/incoming
+# was merged in and removed since it was a strict subset.
 dir1 = "data/archived"
-dir2 = "data/incoming"
 output_file = "dwh/lectures/AllLectures.csv"
 
 # === FUNCTION TO READ ALL CSV FILES FROM A DIRECTORY ===
@@ -22,11 +24,7 @@ def read_all_csv_from_dir(directory):
     return dfs
 
 # === LOAD DATA ===
-dfs_dir1 = read_all_csv_from_dir(dir1)
-dfs_dir2 = read_all_csv_from_dir(dir2)
-
-# === MERGE ALL ===
-all_dfs = dfs_dir1 + dfs_dir2
+all_dfs = read_all_csv_from_dir(dir1)
 
 if not all_dfs:
     print("❌ No CSV files found in either directory.")

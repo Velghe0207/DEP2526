@@ -18,10 +18,10 @@ Sommige scripts in de `/scraping` map maken gebruik van de API waarvoor een gehe
 SECRET=token_hier
 ```
 
-- Nieuwe reservation data in .csv formaat plaatsen in folder: `/data/incoming` en scripts uitvoeren in `/dwh/lectures`
+- Nieuwe reservation data in .csv formaat plaatsen in folder: `/data/archived` en scripts uitvoeren in `/dwh/lectures`
 - Nieuwe OLODs - scrapet ibamaflex: `/scraping/class_scraping.py` - `/scraping/class_processing.ipynb`
 - Nieuwe studenten - overloopt reservatie data van `/scraping/unique_classgroups_schedule.ipynb` en haalt studenten op via [dep2.simondg.com](https://dep2.simondg.com/redoc) - `/scraping/students.ipynb`
-- Nieuwe wifi data: `scraping/wifi_script.py`
+- Nieuwe wifi/studentendata voor Toegepaste Informatica: parquet-bestanden van de SharePoint-folder in `/data/sharepoint` plaatsen en `dwh/fill_staging_wifi_students.py` uitvoeren (vervangt de oude live-scraping via `scraping/wifi_script.py` voor deze richting)
 
 ### Cronjobs
 
@@ -45,15 +45,15 @@ Hier zitten enkele bestanden die handig kunnen zijn bij het controleren van waar
 
 Hier wordt alle data opgeslagen.
 
-`archived`: Alle oude reservatie data wordt hierin bewaard
+`archived`: Alle TimeEdit-reservatiedata (volledig schooljaar), rechtstreeks van de bestaande share
 
 `classgroups`: Alle subgroepen opgehaald uit reservatie data via API van [dep2.simondg.com](https://dep2.simondg.com/redoc)
 
 `cleaned`: Hier zit alle geformatte en opgeschonde data in
 
-`incoming`: Nieuwe opgelaade reservatie data
+`sharepoint`: Klasgroep-, studenten- en wifi-accesspointdata (volledig schooljaar, richting Toegepaste Informatica) in parquet-formaat, aangeleverd via de SharePoint-folder
 
-`week1_4_wifi`: Wifidata van de eerste 4 weken gekregen van lectoren.
+`week1_4_wifi`: Wifidata van de eerste weken van semester 1 (25/09-15/10/2025), gekregen van lectoren vóór de SharePoint-levering. Gebruikt een ouder pseudonimiseringsschema (`u_<sha256>`) dan `sharepoint` (`enc_...`) - niet rechtstreeks te koppelen, zie `dwh/fill_staging_wifi_week1_4.py`.
 
 ## Dwh
 

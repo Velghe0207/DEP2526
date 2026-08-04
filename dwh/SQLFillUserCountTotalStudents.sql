@@ -30,12 +30,21 @@ LectureWifi AS (
     GROUP BY lt.LectureID, lt.SubgroupKey
 ),
 LectureTotal AS (
+    -- Roster size stays anchored to the current-scheme ("enc_") identities.
+    -- The week1_4 September backfill uses an older, incompatible pseudonymization
+    -- scheme ("u_<sha256>") with no crosswalk to the current one, so those users
+    -- get their own DimUser/BridgeUserSubgroup rows (needed so their wifi presence
+    -- still counts toward UserCount) but must be excluded here, otherwise every
+    -- subgroup's TotalStudents double-counts the same real students all year.
     SELECT
         ds.SubgroupKey,
         COUNT(DISTINCT bus.UserKey) AS TotalStudents
     FROM DEP2.dbo.DimSubgroup ds
     INNER JOIN DEP2_staging.dbo.BridgeUserSubgroup bus
         ON ds.SubgroupKey = bus.SubgroupKey
+    INNER JOIN DEP2_staging.dbo.DimUser du
+        ON bus.UserKey = du.UserKey
+    WHERE du.UserName LIKE 'enc\_%' ESCAPE '\'
     GROUP BY ds.SubgroupKey
 ),
 CurrentTime AS (

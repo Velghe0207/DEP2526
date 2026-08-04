@@ -1,0 +1,12 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+583719;05/11/2026 10:00:00;05/11/2026 14:00:00;05/09/2026 05:09:10;mashal.momand@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.064;;;;859241073190;
+583721;05/13/2026 13:00:00;05/13/2026 15:30:00;05/09/2026 12:28:18;laura.becquart@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.040;;;;859252043587;
+583720;05/11/2026 08:30:00;05/11/2026 12:30:00;05/09/2026 14:01:42;yaren.yaldizkaya@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859239874737;
+583722;05/11/2026 13:00:00;05/11/2026 17:00:00;05/09/2026 14:03:06;dounia.saidi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859175258084;
+583723;05/11/2026 13:00:00;05/11/2026 15:30:00;05/09/2026 15:53:26;ameer.safi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859240569497;
+583724;05/12/2026 09:00:00;05/12/2026 13:00:00;05/09/2026 15:55:42;tamkine.rahimy@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.064;;;;859251377523;
+581711;05/13/2026 10:30:00;05/13/2026 14:30:00;05/09/2026 15:56:24;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+583726;05/12/2026 13:30:00;05/12/2026 17:30:00;05/09/2026 15:56:40;ameer.safi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.064;;;;859240569497;
+583727;05/11/2026 13:30:00;05/11/2026 17:30:00;05/09/2026 17:09:07;niels.sablain@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.062;;;;859251247985;
+583728;05/13/2026 14:00:00;05/13/2026 16:00:00;05/09/2026 20:34:32;naomi.botterman@hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;869632824852;;
+583729;05/11/2026 13:00:00;05/11/2026 17:00:00;05/09/2026 22:00:33;lynn.cappaert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.103;;;;859251294061;

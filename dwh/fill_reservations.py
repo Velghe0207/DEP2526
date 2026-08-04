@@ -20,10 +20,8 @@ import pyodbc
 # -------------------- CONFIG --------------------
 CSV_PATH = "../data/cleaned/all_TEreservations.csv"
 
-SERVER = "127.0.0.1,1500"
+SERVER = "localhost\\MSSQLSERVER2019"
 DATABASE = "DEP2"
-USERNAME = "sa"
-PASSWORD = "dep2025-G12"
 DRIVER = "ODBC Driver 17 for SQL Server"
 
 TARGET_TABLE = "FactSchedule"  # change if your fact table has a different name
@@ -36,9 +34,8 @@ FORCE_TIMEKEY_FORMAT: Optional[str] = None
 
 # -------------------- CONNECTION --------------------
 def get_connection():
-    # Correct connection string (no extra braces)
     return pyodbc.connect(
-        f"DRIVER={{{DRIVER}}};SERVER={SERVER};DATABASE={DATABASE};UID={USERNAME};PWD={PASSWORD};TrustServerCertificate=Yes"
+        f"DRIVER={{{DRIVER}}};SERVER={SERVER};DATABASE={DATABASE};Trusted_Connection=Yes;TrustServerCertificate=Yes"
     )
 
 # -------------------- HELPERS --------------------
