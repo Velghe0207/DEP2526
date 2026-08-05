@@ -1,2 +1,0 @@
-﻿ObjectName,Score,HasLectureID,HasUserCount,HasTotalStudents,HasAttendanceRate,Columns
-dbo.FactLecture,30,True,True,True,True,"LectureID, DateKey, FromTimeKey, UntilTimeKey, ClassKey, SubgroupKey, RoomKey, ActivityKey, UserCount, TotalStudents, AttendanceRate, OccupancyRate"
