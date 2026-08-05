@@ -1,0 +1,31 @@
+﻿FullDate,SessionID,ClassName,LessonType,SessionStart,SessionEnd,ExpectedStudents,PresentStudents,AttendanceRate
+2025-11-27,cybersecurity advanced_20251127_1,Cybersecurity Advanced,Gewoon vak,2025-11-27 19:00:00,2025-11-27 22:00:00,50,0,0.0
+2025-12-17,a i voor de bachelorstudent_20251217_1,A.I. voor de bachelorstudent,Gewoon vak,2025-12-17 18:00:00,2025-12-17 20:00:00,104,0,0.0
+2025-12-19,costing_20251219_1,Costing,Gewoon vak,2025-12-19 08:15:00,2025-12-19 12:30:00,105,0,0.0
+2025-09-23,cybersecurity_20250923_1,Cybersecurity,Gewoon vak,2025-09-23 13:30:00,2025-09-23 17:45:00,129,0,0.0
+2025-10-13,trends in artificial intelligence_20251013_1,Trends in Artificial Intelligence,Gewoon vak,2025-10-13 13:30:00,2025-10-13 15:30:00,75,0,0.0
+2026-05-20,big data processing_20260520_2,Big Data Processing,Gewoon vak,2026-05-20 13:30:00,2026-05-20 15:30:00,81,0,0.0
+2026-03-16,operating systems_20260316_1,Operating Systems,Gewoon vak,2026-03-16 10:30:00,2026-03-16 12:30:00,72,0,0.0
+2026-05-19,object oriented software development ii_20260519_1,Object-oriented Software Development II,Gewoon vak,2026-05-19 10:30:00,2026-05-19 12:30:00,111,0,0.0
+2025-11-03,discover the mainframe_20251103_2,Discover the Mainframe,Gewoon vak,2025-11-03 13:30:00,2025-11-03 15:30:00,46,0,0.0
+2025-10-27,discover the mainframe_20251027_1,Discover the Mainframe,Gewoon vak,2025-10-27 10:30:00,2025-10-27 12:30:00,46,0,0.0
+2025-11-03,discover the mainframe_20251103_1,Discover the Mainframe,Gewoon vak,2025-11-03 10:30:00,2025-11-03 12:30:00,46,0,0.0
+2025-10-27,discover the mainframe_20251027_2,Discover the Mainframe,Gewoon vak,2025-10-27 13:30:00,2025-10-27 15:30:00,46,0,0.0
+2025-11-10,discover the mainframe_20251110_1,Discover the Mainframe,Gewoon vak,2025-11-10 13:30:00,2025-11-10 15:30:00,46,0,0.0
+2025-09-24,windows server ii_20250924_1,Windows Server II,Gewoon vak,2025-09-24 09:15:00,2025-09-24 12:30:00,18,0,0.0
+2025-11-17,discover the mainframe_20251117_2,Discover the Mainframe,Gewoon vak,2025-11-17 13:30:00,2025-11-17 15:30:00,46,0,0.0
+2025-11-17,discover the mainframe_20251117_1,Discover the Mainframe,Gewoon vak,2025-11-17 10:30:00,2025-11-17 12:30:00,46,0,0.0
+2026-03-16,data engineering project i_20260316_1,Data Engineering Project I,Groepswerk,2026-03-16 08:15:00,2026-03-16 12:30:00,70,0,0.0
+2026-03-30,data engineering project i_20260330_2,Data Engineering Project I,Groepswerk,2026-03-30 13:30:00,2026-03-30 17:45:00,70,0,0.0
+2026-05-18,data engineering project i_20260518_2,Data Engineering Project I,Groepswerk,2026-05-18 13:30:00,2026-05-18 17:45:00,70,0,0.0
+2025-09-25,windows server ii_20250925_1,Windows Server II,Gewoon vak,2025-09-25 09:15:00,2025-09-25 12:30:00,28,0,0.0
+2025-10-01,windows server ii_20251001_1,Windows Server II,Gewoon vak,2025-10-01 09:15:00,2025-10-01 12:30:00,18,0,0.0
+2025-10-02,windows server ii_20251002_1,Windows Server II,Gewoon vak,2025-10-02 09:15:00,2025-10-02 12:30:00,28,0,0.0
+2025-10-08,windows server ii_20251008_1,Windows Server II,Gewoon vak,2025-10-08 09:15:00,2025-10-08 12:30:00,18,0,0.0
+2025-09-22,trends in artificial intelligence_20250922_1,Trends in Artificial Intelligence,Gewoon vak,2025-09-22 13:30:00,2025-09-22 15:30:00,75,0,0.0
+2025-10-13,the it professional_20251013_1,The IT Professional,Gewoon vak,2025-10-13 13:30:00,2025-10-13 17:45:00,235,0,0.0
+2026-02-27,operating systems_20260227_1,Operating Systems,Gewoon vak,2026-02-27 13:30:00,2026-02-27 15:30:00,58,0,0.0
+2026-03-16,business management_20260316_1,Business & Management,Gewoon vak,2026-03-16 08:15:00,2026-03-16 12:30:00,163,0,0.0
+2025-09-24,data engineering project ii_20250924_1,Data Engineering Project II,Groepswerk,2025-09-24 08:15:00,2025-09-24 12:30:00,59,0,0.0
+2025-09-26,professional communication_20250926_1,Professional Communication,Gewoon vak,2025-09-26 10:30:00,2025-09-26 12:30:00,35,0,0.0
+2025-09-23,computer networks ii_20250923_1,Computer Networks II,Gewoon vak,2025-09-23 13:30:00,2025-09-23 16:30:00,49,0,0.0
