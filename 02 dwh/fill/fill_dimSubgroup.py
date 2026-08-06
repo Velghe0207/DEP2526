@@ -3,7 +3,7 @@ import pyodbc
 from pathlib import Path
 
 # ---------------- Config ----------------
-CSV_PATH = Path("data/cleaned/unique_subgroups.csv")
+CSV_PATH = Path(r"D:\Documents2\School\26-EP3\DEP\repo\DEP2-2025-2026-groep12\00 data\00 raw\subgroups\all_subgroups_enriched.csv")
 
 server = "localhost\\MSSQLSERVER2019"
 database = "DEP2"

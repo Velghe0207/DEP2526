@@ -9,7 +9,7 @@
 
 # Raw wifi export (157MB) exceeds GitHub's 100MB file limit - get it from the
 # SharePoint folder instead (see README), keep only the small students parquet in git
-00 data/raw/wifi/wifi full year/wifi_TIN_2526.parquet
+00 data/00 raw/wifi/wifi full year/wifi_TIN_2526.parquet
 
 # One-off full-history TimeEdit export (2023-2025-12), not part of the daily
 # archive the pipeline scans; kept locally for reference only
