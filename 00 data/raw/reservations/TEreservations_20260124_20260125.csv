@@ -1,6 +1,0 @@
-﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
-490081;01/26/2026 11:00:00;01/26/2026 13:30:00;01/24/2026 10:00:24;stacey.vandendaele@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859239658913;
-479024;01/26/2026 08:30:00;01/26/2026 12:30:00;01/24/2026 10:08:06;katia.decanne+1@hogent.be;Confirmed;;;;;;;;;Digitaal examen;;Digitaal (laptop/PC);Software (Niet ans);;;5884349|5884390|5959040|5906146;869732683221|869003087516;195975|196027;21.03.125.047|21.03.125.051;23283|23295;;;;
-490082;01/26/2026 08:30:00;01/26/2026 11:00:00;01/24/2026 10:10:06;katia.decanne+1@hogent.be;Confirmed;;;;;;;;;;;;;;;;;;04.01.100.029;;;869003087516;;
-490083;01/28/2026 09:00:00;01/28/2026 13:00:00;01/24/2026 20:34:27;ina.gheeraert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.043;;;;859228995579;
-490084;01/28/2026 13:00:00;01/28/2026 17:00:00;01/24/2026 20:59:31;amelie.bracke@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.043;;;;859229078637;

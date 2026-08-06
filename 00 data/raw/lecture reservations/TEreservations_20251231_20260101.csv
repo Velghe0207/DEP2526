@@ -1,0 +1,6 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+486419;12/31/2025 11:30:00;12/31/2025 15:30:00;12/31/2025 09:24:40;alexander.vanbaeveghem@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.105;;;;859251650840;
+476399;01/20/2026 08:00:00;01/20/2026 18:00:00;12/31/2025 11:12:04;katia.decanne+1@hogent.be;Confirmed;;;;;;;;;Mondeling examen;;;;;;5778203|6087664;869732767992;193755;01.02.130.015;22901|23508;;;;
+476378;01/06/2026 12:30:00;01/06/2026 15:00:00;12/31/2025 11:12:59;katia.decanne+1@hogent.be;Confirmed;;;;;;;;;Digitaal examen;;Digitaal (laptop/PC);Software (Niet ans);;;6087663|5778202;869022253706;193754;01.02.130.013;22901|23508;;;;869022253605
+476377;01/06/2026 15:30:00;01/06/2026 17:00:00;12/31/2025 11:13:12;katia.decanne+1@hogent.be;Confirmed;;;;;;;;;Digitaal examen;;Digitaal (laptop/PC);ans: digitaal;;;6087663|5778202;869022253706;193754;01.02.130.013;22901|23508;;;;869422900987
+486425;12/31/2025 09:00:00;12/31/2025 11:30:00;12/31/2025 11:14:20;anissa.elaidi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.101;;;;859251272843;

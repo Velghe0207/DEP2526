@@ -1,0 +1,17 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+460903;08/01/2025 12:30:00;08/01/2025 16:30:00;08/01/2025 08:57:48;maite.sarafian@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.103;;;;859239919803;
+460905;02/10/2026 15:45:00;02/10/2026 17:45:00;08/01/2025 10:57:39;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.02.110.034;;;;;
+460906;02/10/2026 08:15:00;02/10/2026 10:15:00;08/01/2025 11:07:10;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.02.110.034;;;;;
+460907;02/17/2026 08:15:00;02/17/2026 10:15:00;08/01/2025 11:07:10;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.02.110.034;;;;;
+460908;02/24/2026 08:15:00;02/24/2026 10:15:00;08/01/2025 11:07:10;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.02.110.034;;;;;
+460909;02/12/2026 16:00:00;02/12/2026 18:30:00;08/01/2025 11:13:15;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.02.110.032;;;;;
+460910;02/09/2026 13:15:00;02/09/2026 16:15:00;08/01/2025 11:17:50;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.03.100.125;;;;;
+457844;03/25/2026 08:30:00;03/25/2026 12:00:00;08/01/2025 11:28:22;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.02.140.017;;;;;
+459991;03/25/2026 13:00:00;03/25/2026 16:00:00;08/01/2025 11:30:45;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.03.120.008;;;;;
+456949;03/30/2026 16:30:00;03/30/2026 18:30:00;08/01/2025 11:34:53;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+456968;05/18/2026 15:45:00;05/18/2026 17:45:00;08/01/2025 11:37:20;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.16.110.252;;;;;
+457855;03/24/2026 08:15:00;03/24/2026 10:15:00;08/01/2025 11:51:09;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.16.110.252;;;;;
+460913;05/19/2026 08:30:00;05/19/2026 10:30:00;08/01/2025 11:57:26;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.03.100.125;;;;;
+460912;05/18/2026 13:30:00;05/18/2026 15:30:00;08/01/2025 11:57:33;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.03.100.125;;;;;
+456939;04/03/2026 13:30:00;04/03/2026 15:30:00;08/01/2025 11:59:59;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+460914;09/05/2025 08:00:00;09/05/2025 14:30:00;08/01/2025 16:48:14;antje.dewitte+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.02.120.033;;;;;

@@ -1,0 +1,11 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+477536;10/17/2025 10:30:00;10/17/2025 12:30:00;10/12/2025 10:16:40;chanel.vanhauwaert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.103;;;;859251444817;
+441443;01/13/2026 08:30:00;01/13/2026 12:30:00;10/12/2025 10:51:32;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+441448;01/13/2026 13:00:00;01/13/2026 17:00:00;10/12/2025 10:51:35;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+441446;01/23/2026 08:30:00;01/23/2026 12:30:00;10/12/2025 10:52:06;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+477537;01/26/2026 08:30:00;01/26/2026 12:30:00;10/12/2025 10:52:36;Shari.vanwonterghem+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.16.100.269;;;;;
+441447;01/27/2026 08:30:00;01/27/2026 12:30:00;10/12/2025 10:52:56;Shari.vanwonterghem+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.16.100.269;;;;;
+441449;01/29/2026 08:30:00;01/29/2026 12:30:00;10/12/2025 10:53:15;Shari.vanwonterghem+1@hogent.be;Confirmed;;;;UGent;_te_599066;;;;;;;;;;;;;01.16.100.269;;;;;
+477538;10/15/2025 12:30:00;10/15/2025 16:30:00;10/12/2025 13:59:24;bella.souleymanova@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859251680849;
+477540;10/13/2025 12:30:00;10/13/2025 14:30:00;10/12/2025 15:14:38;anne.heremans@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859251555254;
+477543;10/14/2025 15:30:00;10/14/2025 16:30:00;10/12/2025 15:24:33;elien.willaert@student.hogent.be;Confirmed;;;;;;;;;;;;;;AR-bril SCH 01;;;;;;;;859228891812;

@@ -1,8 +1,0 @@
-﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
-474746;01/07/2026 09:00:00;01/07/2026 12:00:00;09/28/2025 11:17:05;umit.karanfil@hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;869282743061;;
-474747;09/29/2025 09:00:00;09/29/2025 13:00:00;09/28/2025 12:43:36;nour.abusharekh@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.026;;;;859240669026;
-474748;09/30/2025 10:30:00;09/30/2025 12:30:00;09/28/2025 13:48:16;femke.soetens@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.102;;;;859254318542;
-474749;09/30/2025 12:30:00;09/30/2025 13:30:00;09/28/2025 14:33:20;thomas.vanackere@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.037;;;;859240870706;
-474750;09/30/2025 14:00:00;09/30/2025 15:00:00;09/28/2025 21:00:03;sara.vandamme@hogent.be;Confirmed;;;;;;;;;;;;;;;;;;One desk 1;;;869092879709;;
-474751;10/07/2025 09:00:00;10/07/2025 11:00:00;09/28/2025 21:01:05;sara.vandamme@hogent.be;Confirmed;;;;;;;;;;;;;;;;;;One desk 1;;;869092879709;;
-474752;10/07/2025 14:00:00;10/07/2025 17:00:00;09/28/2025 21:01:20;sara.vandamme@hogent.be;Confirmed;;;;;;;;;;;;;;;;;;One desk 1;;;869092879709;;

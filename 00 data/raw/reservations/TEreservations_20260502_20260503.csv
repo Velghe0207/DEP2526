@@ -1,9 +1,0 @@
-﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
-573165;05/04/2026 08:30:00;05/04/2026 12:30:00;05/02/2026 00:23:34;mathieu.vanheste@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.040;;;;859218656591;
-576065;05/04/2026 13:00:00;05/04/2026 17:00:00;05/02/2026 03:53:30;efekan.dalar@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859251501401;
-576066;05/06/2026 10:30:00;05/06/2026 13:00:00;05/02/2026 11:31:36;marieke.verheye@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.040;;;;859230033984;
-576067;05/04/2026 12:30:00;05/04/2026 14:30:00;05/02/2026 17:03:01;sarah.deroeck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859251297596;
-576068;05/08/2026 15:00:00;05/08/2026 16:30:00;05/02/2026 18:53:58;sofie.delaender@student.hogent.be;Confirmed;;;;;;;;;;;;;;Opspeldmicro's voor 2 personen SCH01;;;;;;;;859251718942;
-576069;05/11/2026 08:00:00;05/11/2026 21:00:00;05/02/2026 18:54:36;sofie.delaender@student.hogent.be;Confirmed;;;;;;;;;;;;;;Opspeldmicro's voor 2 personen SCH01;;;;;;;;859251718942;
-576070;05/04/2026 10:00:00;05/04/2026 14:00:00;05/02/2026 21:11:36;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
-576071;05/05/2026 10:00:00;05/05/2026 14:00:00;05/02/2026 21:11:58;ina.gheeraert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.114;;;;859228995579;

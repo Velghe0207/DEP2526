@@ -1,0 +1,17 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+510886;03/16/2026 08:30:00;03/16/2026 12:30:00;03/15/2026 11:53:19;lukas.jacobs@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859241088954;
+510888;03/16/2026 11:00:00;03/16/2026 15:00:00;03/15/2026 13:17:39;busra.durgut@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.057;;;;859241050053;
+510887;03/17/2026 11:30:00;03/17/2026 12:30:00;03/15/2026 15:11:59;kobe.verhaeghe@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859251443096;
+510889;03/16/2026 10:00:00;03/16/2026 14:00:00;03/15/2026 18:42:38;michelle.deserranno@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.062;;;;859239957387;
+510890;03/18/2026 10:30:00;03/18/2026 12:30:00;03/15/2026 20:13:15;kay.verzele@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.114;;;;859239754192;
+510891;03/16/2026 12:00:00;03/16/2026 16:00:00;03/15/2026 20:39:46;sheylene.bos@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.063;;;;859230190804;
+510892;03/16/2026 11:00:00;03/16/2026 13:30:00;03/15/2026 21:40:56;yasmin.mahhou@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859251702875;
+510893;03/17/2026 12:30:00;03/17/2026 16:00:00;03/15/2026 21:45:17;yasmin.mahhou@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.036;;;;859251702875;
+496924;03/18/2026 13:00:00;03/18/2026 17:00:00;03/15/2026 21:57:13;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+510894;03/18/2026 10:30:00;03/18/2026 13:30:00;03/15/2026 21:57:32;zineb.alhamadah@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.043;;;;859240855649;
+496926;03/25/2026 13:00:00;03/25/2026 17:00:00;03/15/2026 21:58:10;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+510895;03/25/2026 10:30:00;03/25/2026 13:30:00;03/15/2026 21:58:26;zineb.alhamadah@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.054;;;;859240855649;
+510897;03/16/2026 15:00:00;03/16/2026 16:00:00;03/15/2026 22:21:48;lotte.vanhoecke@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.101;;;;859240632347;
+510898;03/16/2026 13:30:00;03/16/2026 16:30:00;03/15/2026 23:04:51;gail.deboeuf@hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.040;;;869003028710;;
+510899;03/16/2026 11:00:00;03/16/2026 15:00:00;03/15/2026 23:27:26;elif.meydan@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.064;;;;859240735310;
+510900;03/17/2026 09:00:00;03/17/2026 13:00:00;03/15/2026 23:28:35;elif.meydan@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859240735310;

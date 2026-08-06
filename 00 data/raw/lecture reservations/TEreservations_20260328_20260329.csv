@@ -1,0 +1,6 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+556079;03/30/2026 09:00:00;03/30/2026 12:30:00;03/28/2026 09:10:30;roan.windels@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859153112176;
+556080;03/31/2026 09:30:00;03/31/2026 13:30:00;03/28/2026 10:33:11;marieke.verheye@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.040;;;;859230033984;
+556081;03/31/2026 13:30:00;03/31/2026 17:30:00;03/28/2026 10:42:53;ina.gheeraert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859228995579;
+556082;04/02/2026 09:00:00;04/02/2026 13:00:00;03/28/2026 10:47:21;ina.gheeraert@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;;859228995579;
+556083;03/31/2026 12:30:00;03/31/2026 15:00:00;03/28/2026 18:23:11;lena.kaouache@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.057;;;;859251664984;

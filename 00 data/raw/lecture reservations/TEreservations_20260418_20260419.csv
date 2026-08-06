@@ -1,0 +1,5 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+567108;04/21/2026 15:30:00;04/21/2026 19:30:00;04/18/2026 10:24:27;amelie.bracke@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.058;;;;859229078637;
+567109;04/20/2026 13:30:00;04/20/2026 17:00:00;04/18/2026 12:37:52;rocco.depotter@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.114;;;;859239715796;
+567111;04/20/2026 16:00:00;04/20/2026 20:00:00;04/18/2026 16:25:44;adele.babled@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.060;;;;859240629721;
+564025;06/03/2026 09:00:00;06/03/2026 11:00:00;04/18/2026 20:26:05;tineke.vandurm+1@hogent.be;Confirmed;;;;;;;;;Schriftelijk examen;;;;;;6092887|6092933;869192098884|869612853158;201303;02.01.110.015;22946;;;;_te_633879

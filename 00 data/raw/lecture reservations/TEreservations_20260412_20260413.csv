@@ -1,0 +1,15 @@
+﻿Id;Start;End;Updated;UpdatedBy;Status;ReasonTeacher;ReasonRoom;InternExtern;Department;User;CoordinationService;ContactPerson;WorkFormCourse;WorkFormExam;WorkFormEvaluation;LearningEnvironment;ExamEnvironment;EducationActivity;MobileEquipment;Classgroups;TeacherIds;OlodPointers;Rooms;TrajectoryPart;GroupHogent;Person;Student;Invigilator
+563590;05/27/2026 13:00:00;05/27/2026 17:00:00;04/12/2026 14:20:00;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859175665080;
+563591;05/29/2026 12:00:00;05/29/2026 16:00:00;04/12/2026 14:20:49;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859175665080;
+563588;05/18/2026 13:00:00;05/18/2026 16:00:00;04/12/2026 14:25:38;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859175665080;
+563589;05/19/2026 13:00:00;05/19/2026 16:00:00;04/12/2026 14:27:09;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859175665080;
+563592;06/02/2026 13:00:00;06/02/2026 17:00:00;04/12/2026 14:31:42;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859175665080;
+563593;06/05/2026 12:00:00;06/05/2026 15:00:00;04/12/2026 14:32:35;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859175665080;
+563594;06/11/2026 13:00:00;06/11/2026 17:00:00;04/12/2026 14:34:45;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859175665080;
+563595;05/12/2026 08:30:00;05/12/2026 12:30:00;04/12/2026 14:37:59;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.043;;;;859175665080;
+563596;05/11/2026 13:00:00;05/11/2026 17:00:00;04/12/2026 14:40:54;lynn.demuynck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.100;;;;859175665080;
+500640;04/21/2026 08:30:00;04/21/2026 12:30:00;04/12/2026 14:44:11;;Cancelled;;;;;;;;;;;;;;;;;;;;;;;
+563599;04/14/2026 09:00:00;04/14/2026 13:00:00;04/12/2026 18:25:42;sven.vanmalderen@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.043;;;;859252021662;
+563601;04/14/2026 10:30:00;04/14/2026 14:30:00;04/12/2026 21:38:02;can.cakal@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.056;;;;859240569194;
+563602;04/13/2026 10:00:00;04/13/2026 14:00:00;04/12/2026 22:01:24;sarah.deroeck@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;21.07.110.025;;;;859251297596;
+563603;04/13/2026 12:00:00;04/13/2026 16:00:00;04/12/2026 23:33:35;ameer.safi@student.hogent.be;Confirmed;;;;;;;;;;;;;;;;;;01.04.120.065;;;;859240569497;
